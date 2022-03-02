@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+*{
+    /* font-family: 'Shrikhand', cursive; */
+    box-sizing: border-box;/* Opera/IE 8+ */
+    -moz-box-sizing: border-box;/* Firefox, autres Gecko */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+}
+
+@media  (max-width: 468px)
+{
+
+  body
+  {
+    width: 390px;
+    background-color: white;
+  }
+
+
+  /* ************************Entete*************************************** */
+  header
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo 
+  {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 55px;
+    width: 100%;
+    justify-content:center;
+  }
+  .logo img
+  {
+    height: 55px;
+    width: 168px;
+  }
+  .header__image
+  {
+      width: 390px;
+      height: 255px;
+  }
+   .header__image img
+   {
+    width: 390px;
+    height: 255px;
+
+   }
+ /******************************************main**********************************/
+  main
+  {
+    background-color: white;
+    position:relative;
+    border-radius: 25px;
+    border:1px solid white;
+    top:-22px;
+    z-index: 1;
+    width: 100%; 
+    padding-left: 25px;
+  }
+
+  .restaurant
+  {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .recette
+  {
+      display: flex;
+      justify-content: space-between;
+      width: 348px;
+      height: 68px;
+      border:1px solid black;
+      border-radius: 10px;
+      margin-bottom: 20px;
+  }
+  .recette p
+   {
+     margin:0px;
+     padding-top: 8px;
+     padding-left: 8px;
+   }
+   .recette p:nth-child(1)
+   {
+     font-weight: bold;
+   }
+   h5
+   {
+      font-weight: lighter;
+       margin: 0px;
+   }
+
+    hr
+    {
+        margin: 0px;
+        width: 30px;
+        border: 1px solid #99E2D0;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    /* **************************************footer*************************** */
+    footer
+    {
+        color:white;
+        padding-left: 22px;
+        padding-top: 12px;
+        height: 200px;
+        background-color: #353535;
+    }
+    footer h4
+    {
+        font-family: 'Shrikhand', cursive;
+        font-weight: lighter;
+    }
+    footer p
+    {
+        margin: 0px;
+        margin-bottom: 8px;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+    footer p span
+    {
+        margin-left: 10px;
+    }
+    footer p span
+    {
+        margin-left: 10px;
+    }
+}
