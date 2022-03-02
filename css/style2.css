@@ -30,10 +30,21 @@
     margin-top: 20px;
     height: 55px;
     width: 100%;
-    justify-content:center;
+    justify-content:left;
+    margin-left: 40px;
+  }
+  .logo a
+  {
+
+    width: 60px;
+    display: block;
+    color:#7e7e7e;
+    padding-top: 18px;
+
   }
   .logo img
   {
+
     height: 55px;
     width: 168px;
   }
@@ -67,14 +78,17 @@
       display: flex;
       justify-content: space-between;
   }
-
+  .rest_heart
+  {
+    padding-top: 18px;
+  }
   .recette
   {
       display: flex;
       justify-content: space-between;
       width: 348px;
       height: 68px;
-      border:1px solid black;
+      box-shadow:2px 3px 10px #d9d9d9;
       border-radius: 10px;
       margin-bottom: 20px;
   }
@@ -87,6 +101,23 @@
    .recette p:nth-child(1)
    {
      font-weight: bold;
+   }
+  .recette__desc
+  {
+    width: 70%;
+
+  }
+   .recette__prix
+   {
+     padding-top: 30px;
+     width: 20%;
+
+   }
+   .recette__check
+   {
+     padding-top: 35px;
+     width: 10%;
+
    }
    h5
    {
@@ -123,6 +154,10 @@
         margin-bottom: 8px;
         font-size: 1.1em;
         font-weight: bold;
+    }
+    .fa-utensils
+    {
+      padding-right: 5px;
     }
     footer p span
     {

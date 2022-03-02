@@ -121,7 +121,7 @@
       border-radius: 20px;
       text-decoration: none;
       color:black;
-      box-shadow: 2px 2px .1em;
+      box-shadow:2px 3px 10px #d9d9d9;
       background-color:#f6f6f6 ;
     } 
     nav a:hover
@@ -167,7 +167,7 @@
       margin-left: 15px;
       margin-bottom: 25px;
       position: relative;
-      box-shadow: 2px 3px 0.4em;
+      box-shadow:2px 3px 10px #d9d9d9;
       border-radius: 15px;
       background-color: white;
       width: 336px;
@@ -235,6 +235,10 @@
     {
       font-family: 'Shrikhand', cursive;
       font-weight: lighter;
+    }
+    .fa-utensils
+    {
+      padding-right: 5px;
     }
     footer p
     {
