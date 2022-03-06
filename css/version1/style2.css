@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
   }
-  .logo 
+  .header__logo 
   {
     display: flex;
     margin-bottom: 20px;
@@ -33,32 +33,30 @@
     justify-content:left;
     margin-left: 40px;
   }
-  .logo a
+  .header__logo__fleche
   {
-
-    width: 60px;
+   
     display: block;
     color:#7e7e7e;
     padding-top: 18px;
 
   }
-  .logo img
+  .header__logo__lgo
   {
-
-    height: 55px;
-    width: 168px;
+    width: 300px;
+    text-align: center;
   }
-  .header__image
+  .header__logo__lgo img
+  {
+    height: 55px;
+    width: 170px;
+  }
+  .header__image img
   {
       width: 390px;
       height: 255px;
   }
-   .header__image img
-   {
-    width: 390px;
-    height: 255px;
 
-   }
  /******************************************main**********************************/
   main
   {
@@ -71,18 +69,18 @@
     width: 100%; 
     padding-left: 25px;
   }
-
-  .restaurant
+  .main__restaurant
   {
       width: 80%;
       display: flex;
       justify-content: space-between;
   }
-  .rest_heart
+  .main__restaurant__icon
   {
     padding-top: 18px;
   }
-  .recette
+
+  .main__entrees__recette,.main__plats__recette,.main__dessert__recette
   {
       display: flex;
       justify-content: space-between;
@@ -92,37 +90,32 @@
       border-radius: 10px;
       margin-bottom: 20px;
   }
-  .recette p
+   .main__entrees__recette p,.main__plats__recette p,.main__dessert__recette p
    {
      margin:0px;
      padding-top: 8px;
      padding-left: 8px;
    }
-   .recette p:nth-child(1)
+   .main__entrees__recette p:nth-child(1),.main__plats__recette p:nth-child(1),.main__dessert__recette p:nth-child(1)
    {
      font-weight: bold;
    }
-  .recette__desc
+  .main__entrees__recette__desc,.main__plats__recette__desc,.main__dessert__recette__desc
   {
     width: 70%;
 
   }
-   .recette__prix
+   .main__entrees__recette__prix,.main__plats__recette__prix,.main__dessert__recette__prix
    {
      padding-top: 30px;
      width: 20%;
 
    }
-   .recette__check
+   .main__entrees__recette__check,.main__plats__recette__check,.main__dessert__recette__check
    {
      padding-top: 35px;
      width: 10%;
 
-   }
-   h5
-   {
-      font-weight: lighter;
-       margin: 0px;
    }
 
     hr
@@ -133,38 +126,35 @@
         margin-top: 5px;
         margin-bottom: 15px;
     }
-
     /* **************************************footer*************************** */
     footer
     {
-        color:white;
-        padding-left: 22px;
-        padding-top: 12px;
-        height: 200px;
-        background-color: #353535;
+      color:white;
+      padding-left: 22px;
+      padding-top: 12px;
+      height: 230px;
+      background-color: #353535;
     }
-    footer h4
+    .footer__heading
     {
-        font-family: 'Shrikhand', cursive;
-        font-weight: lighter;
-    }
-    footer p
-    {
-        margin: 0px;
-        margin-bottom: 8px;
-        font-size: 1.1em;
-        font-weight: bold;
+      font-family: 'Shrikhand', cursive;
+      font-weight: lighter;
     }
     .fa-utensils
     {
       padding-right: 5px;
     }
-    footer p span
+    .footer__options
     {
-        margin-left: 10px;
+      margin: 0px;
+      margin-bottom: 8px;
+      font-size: 1.0em;
+      font-weight: bold;
     }
-    footer p span
+    .footer__options  span
     {
-        margin-left: 10px;
+      margin-left: 10px;
+      font-size: 1.1em;
+      font-weight: bolder;
     }
 }

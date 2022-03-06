@@ -6,34 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <script src="https://kit.fontawesome.com/cf78a9774a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/version1/style.css" type="text/css">
     <title>Ohmyfood</title>
 </head>
 <body>
-    <header>
-       <div class="logo">
+
+    <header class="header"> 
+       <div class="header__logo">
          <img src="images/logo/ohmyfood.png"  alt="logo" />
        </div>
-       <div class="localisation">
+       <div class="header__localisation">
            <i class="fa-solid fa-location-dot"></i>Paris,Belleville
        </div>
-       <div class="reservation">
+       <div class="header__reservation">
            <h3>Réservez le menu qui vous convient</h3>
            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
            <a href="#">Explorer nos restaurants</a>
        </div>
     </header>
-    <nav>
-       <h3>Fonctionnement</h3>
+    <nav class="nav">
+       <p class="nav__heading">Fonctionnement</p>
        <ul>
            <i class="fa-solid fa-1"></i>
-           <li>                
+           <li class="nav__link">                
                 <a href="#"> 
                   <i class="fa-solid fa-mobile-screen-button"></i>
                    <span>choisissez un restaurant</span>
                 </a>
            </li>
-           <li>
+           <li class="nav__link">
                <i class="fa-solid fa-2"></i>
                <a href="#">                 
                   <i class="fa-solid fa-ellipsis-vertical"></i>
@@ -41,7 +42,7 @@
                    <span>Composez votre menu</span>
                 </a>
            </li>
-           <li>
+           <li class="nav__link">
                <i class="fa-solid fa-3"></i>
                <a href="#">         
                   <i class="fa-solid fa-store"></i>
@@ -49,86 +50,86 @@
                 </a>
            </li>
        </ul>
-   </nav>
-   <main>
-       <h3>Restaurants</h3>
-       <a href="lafrancaise.html">
-        <div class="main__new">
-            <span>Nouveau</span>
-        </div>
-        <div class="card">
-            <div class="card__image">
-              <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="À la française"/>
+    </nav>
+    <main class="main">
+       <p class="main__heading">Restaurants</p>
+       <a class="main__card" href="lafrancaise.html">
+            <div class="main__card__new">
+                <span>Nouveau</span>
             </div>
-            <div class="card__description">
-                <div class="card__description__title">
-                <h5>La palette du gout</h5>
-                <h6>Ménilmontant</h6>
+            <div class="main__card__content">
+                <div class="main__card__content__image">
+                   <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="À la française"/>
                 </div>
-                <div class="card__description__icon">
-                    <i class="fa-regular fa-heart"></i>
+                <div class="main__card__content__description">
+                    <div class="main__card__content__description__heading">
+                       <h5>La palette du gout</h5>
+                       <h6>Ménilmontant</h6>
+                    </div>
+                    <div class="main__card__content__description__icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
                 </div>
             </div>
-        </div>
        </a>
-       <a href="lanote.html">
-        <div class="main__new">
+       <a class="main__card" href="lanote.html">
+        <div class="main__card__new">
             <span>Nouveau</span>
         </div>
-        <div class="card">
-            <div class="card__image">
+        <div class="main__card__content">
+            <div class="main__card__content__image">
               <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La notte enchantée"/>
             </div>
-            <div class="card__description">
-                <div class="card__description__title">
+            <div class="main__card__description">
+                <div class="main__card__content__description__heading">
                     <h5>La palette du gout</h5>
                     <h6>Ménilmontant</h6>
                 </div>
-                <div class="card__description__icon">
+                <div class="main__card__content__description__icon">
                     <i class="fa-regular fa-heart"></i>
                 </div>
             </div>
         </div>
        </a>
-       <a href="lapalette.html">
-        <div class="card">
-            <div class="card__image">
+       <a class="main__card" href="lapalette.html">
+        <div class="main__card__content">
+            <div class="main__card__content__image">
              <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="La palette du gout"/>
             </div>
-            <div class="card__description">
-                <div class="card__description__title">
+            <div class="main__card__content__description">
+                <div class="main__card__content__description__heading">
                     <h5>La palette du gout</h5>
                     <h6>Ménilmontant</h6>
                 </div>
-                <div class="card__description__icon">
+                <div class="main__card__content__description__icon">
                     <i class="fa-regular fa-heart"></i>
                 </div>
             </div>
         </div>
        </a>      
-       <a href="ledelice.html">
-        <div class="card">
-            <div class="card__image">
+       <a class="main__card" href="ledelice.html">
+        <div class="card__card__content">
+            <div class="main__card__content__image">
               <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Le délice des sens"/>
             </div>
-            <div class="card__description">
-               <div class="card__description__title">
+            <div class="main__card__content__description">
+               <div class="main__card__content__description__heading">
                  <h5>La palette du gout</h5>
                  <h6>Ménilmontant</h6>
                </div>
-               <div class="card__description__icon">
+               <div class="main__card__content__description__icon">
                 <i class="fa-regular fa-heart"></i>
                </div>
              </div>
         </div>
        </a>
-   </main>
-   <footer>
-       <h4>Ohmyfood</h4>
-       <p><i class="fa-solid fa-utensils"></i><span>Proposer un restaurant</span></p>
-       <p><i class="fa-solid fa-handshake-angle"></i><span>Devenir partenaire</span></p>
-       <p>Mentions Légales</p>
-       <p>Contact</p>
-   </footer>
+    </main>
+    <footer class="footer">
+       <p class="footer__heading">Ohmyfood</p>
+       <p class="footer__options"><i class="fa-solid fa-utensils"></i><span>Proposer un restaurant</span></p>
+       <p class="footer__options"><i class="fa-solid fa-handshake-angle"></i><span>Devenir partenaire</span></p>
+       <p class="footer__options">Mentions Légales</p>
+       <p class="footer__options">Contact</p>
+    </footer> 
 </body>
 </html>
