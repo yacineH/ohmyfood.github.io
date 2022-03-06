@@ -4,7 +4,8 @@
   "description": "Site Ohmyfood",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch ./sass/style.scss:./css/version2/style.css",
+    "prefix":"postcss ./css/version2/style.css --use autoprefixer -d ./css/version2/prefixed/"
   },
   "repository": {
     "type": "git",
