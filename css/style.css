@@ -1,5 +1,287 @@
-body {
-  background-color: red;
+@media (max-width: 468px) {
+  @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+  body {
+    width: 414px;
+    background-color: white;
+  }
+
+  .header__logo {
+    margin-left: 115px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 55px;
+    width: 168px;
+  }
+  .header__logo img {
+    height: 55px;
+    width: 168px;
+  }
+  .header__localisation {
+    text-align: center;
+    padding-top: 17px;
+    height: 50px;
+    border-top: 1px solid #f2f2f2;
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #f2f2f2;
+    color: #353535;
+    font-weight: normal;
+    font-size: 0.9em;
+  }
+  .header__localisation i {
+    margin-right: 10px;
+  }
+  .header__reservation {
+    text-align: center;
+  }
+  .header__reservation h3 {
+    margin-top: 30px;
+    margin-left: 100px;
+    width: 200px;
+    font-weight: normal;
+  }
+  .header__reservation p {
+    width: 249px;
+    margin-left: 80px;
+    margin-bottom: 35px;
+  }
+  .header__reservation a {
+    text-decoration: none;
+    color: white;
+    background-color: #9356DC;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .header-pages {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-pages__logo {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 55px;
+    width: 100%;
+    justify-content: left;
+    margin-left: 40px;
+  }
+  .header-pages__logo__fleche {
+    display: block;
+    color: #7e7e7e;
+    padding-top: 18px;
+  }
+  .header-pages__logo__lgo {
+    width: 300px;
+    text-align: center;
+  }
+  .header-pages__logo__lgo img {
+    height: 55px;
+    width: 170px;
+  }
+  .header-pages__image img {
+    width: 414px;
+    height: 255px;
+  }
+
+  .nav {
+    margin-top: 85px;
+  }
+  .nav__heading {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  .nav ul {
+    width: 95%;
+    margin: auto;
+    list-style: none;
+  }
+  .nav ul .fa-1, .nav ul .fa-2, .nav ul .fa-3 {
+    position: relative;
+    font-size: 0.5em;
+    background-color: #9356DC;
+    top: 45px;
+    left: -7px;
+    padding: 6px;
+    border-radius: 30px;
+    color: white;
+    z-index: 2;
+  }
+  .nav__link a {
+    position: relative;
+    padding-left: 25px;
+    padding-top: 25px;
+    display: block;
+    height: 72px;
+    width: 85%;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 2px 3px 10px #d9d9d9;
+    background-color: #f6f6f6;
+  }
+  .nav__link a i {
+    margin: 0px;
+    padding: 0px;
+    color: #7e7e7e;
+  }
+  .nav__link a span {
+    margin-left: 35px;
+  }
+  .nav__link a:hover {
+    background-color: #ff79da;
+  }
+
+  .main {
+    margin-top: 70px;
+    background-color: #f6f6f6;
+    padding: 5px;
+  }
+  .main__heading {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  .main__card {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    display: block;
+  }
+  .main__card__content {
+    margin-left: 15px;
+    margin-bottom: 25px;
+    position: relative;
+    box-shadow: 2px 3px 10px #d9d9d9;
+    border-radius: 15px;
+    background-color: white;
+    width: 336px;
+    height: 255px;
+  }
+  .main__card__content__image img {
+    width: 336px;
+    height: 176px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .main__card__content__description {
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+  }
+  .main__card__content__description__heading {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .main__card__content__description__heading h5, .main__card__content__description__heading h6 {
+    margin: 0px;
+    padding: 0px;
+  }
+  .main__card__content__description__heading h6 {
+    margin: 0px;
+    padding-top: 5px;
+    font-weight: lighter;
+  }
+  .main__card__content__description__icon {
+    margin-top: 20px;
+  }
+  .main__card__new {
+    text-align: center;
+    position: absolute;
+    top: 25px;
+    left: 260px;
+    z-index: 1;
+    width: 70px;
+    height: 25px;
+    background-color: #99E2D0;
+    color: #3ad6af;
+    font-weight: bold;
+    padding-top: 3px;
+  }
+
+  .main-pages {
+    background-color: white;
+    position: relative;
+    border-radius: 25px;
+    border: 1px solid white;
+    top: -22px;
+    z-index: 1;
+    width: 100%;
+    padding-left: 25px;
+    width: 380px;
+  }
+  .main-pages__restaurant {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-pages__restaurant__icon {
+    padding-top: 18px;
+  }
+  .main-pages__entrees__recette, .main-pages__plats__recette, .main-pages__dessert__recette {
+    display: flex;
+    justify-content: space-between;
+    width: 348px;
+    height: 68px;
+    box-shadow: 2px 3px 10px #d9d9d9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .main-pages__entrees__recette p, .main-pages__plats__recette p, .main-pages__dessert__recette p {
+    margin: 0px;
+    padding-top: 8px;
+    padding-left: 8px;
+  }
+  .main-pages__entrees__recette p:nth-child(1), .main-pages__plats__recette p:nth-child(1), .main-pages__dessert__recette p:nth-child(1) {
+    font-weight: bold;
+  }
+  .main-pages____entrees__recette__desc, .main-pages____plats__recette__desc, .main-pages____dessert__recette__desc {
+    width: 70%;
+  }
+  .main-pages____entrees__recette__prix, .main-pages__plats__recette__prix, .main-pages____dessert__recette__prix {
+    padding-top: 30px;
+    width: 20%;
+  }
+  .main-pages__entrees__recette__check, .main-pages__plats__recette__check, .main-pages__dessert__recette__check {
+    padding-top: 35px;
+    width: 10%;
+  }
+  .main-pages hr {
+    margin: 0px;
+    width: 30px;
+    border: 1px solid #99E2D0;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  .footer {
+    color: white;
+    padding-left: 22px;
+    padding-top: 12px;
+    height: 230px;
+    background-color: #353535;
+  }
+  .footer .fa-utensils {
+    padding-right: 5px;
+  }
+  .footer__heading {
+    font-family: "Shrikhand", cursive;
+    font-weight: lighter;
+  }
+  .footer__options {
+    margin: 0px;
+    margin-bottom: 8px;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .footer__options span {
+    margin-left: 10px;
+    font-size: 1.1em;
+    font-weight: bolder;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
