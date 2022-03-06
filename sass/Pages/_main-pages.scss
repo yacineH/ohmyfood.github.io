@@ -1,0 +1,69 @@
+.main-pages
+{
+    background-color: white;
+    position:relative;
+    border-radius: 25px;
+    border:1px solid white;
+    top:-22px;
+    z-index: 1;
+    width: 100%; 
+    padding-left: 25px;
+    width: 380px;;
+    
+    &__restaurant
+    {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        
+        &__icon
+        {
+            padding-top: 18px; 
+        }
+    }
+
+    &__entrees__recette,&__plats__recette,&__dessert__recette
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 348px;
+        height: 68px;
+        box-shadow:2px 3px 10px #d9d9d9;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        p
+        {
+            margin:0px;
+            padding-top: 8px;
+            padding-left: 8px;
+        }
+        p:nth-child(1)
+        {
+            font-weight: bold;
+        }
+    }
+    &____entrees__recette__desc,&____plats__recette__desc,&____dessert__recette__desc
+    {
+        width: 70%;
+    }
+    &____entrees__recette__prix,&__plats__recette__prix,&____dessert__recette__prix
+    {
+        padding-top: 30px;
+        width: 20%;  
+    }
+
+    &__entrees__recette__check,&__plats__recette__check,&__dessert__recette__check
+    {
+        padding-top: 35px;
+        width: 10%;
+    }
+    hr
+    {
+        margin: 0px;
+        width: 30px;
+        border: 1px solid #99E2D0;
+        margin-top: 5px;
+        margin-bottom: 15px;
+
+    }
+}

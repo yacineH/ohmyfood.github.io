@@ -1,3 +1,18 @@
-body{
-    background-color: red;
+@media (max-width: 468px)
+{ 
+    @import "./Base/base";
+
+    @import "./Base/body";
+    
+    @import "./Layout/header";
+
+    @import "./Layout/header-pages";
+
+    @import "./Composants/navigation";
+
+    @import "./Composants/main";
+
+    @import "./Pages/main-pages";
+
+    @import "./Layout/footer";
 }

@@ -4,8 +4,8 @@
   "description": "Site Ohmyfood",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/style.scss:./css/version2/style.css",
-    "prefix":"postcss ./css/version2/style.css --use autoprefixer -d ./css/version2/prefixed/"
+    "sass": "sass --watch ./sass/style.scss:./css/style.css",
+    "prefix":"postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -13,6 +13,7 @@
   },
   "author": "Hayat yacine",
   "license": "ISC",
+  "browserlist":"last 4 versions",
   "bugs": {
     "url": "https://github.com/yacineH/ohmyfood.github.io/issues"
   },

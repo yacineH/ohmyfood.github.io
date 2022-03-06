@@ -1,0 +1,33 @@
+    .footer
+    {
+        color:white;
+        padding-left: 22px;
+        padding-top: 12px;
+        height: 230px;
+        background-color: #353535;
+
+        .fa-utensils
+        {
+            padding-right: 5px; 
+        }
+
+        &__heading
+        {
+            font-family: 'Shrikhand', cursive;
+            font-weight: lighter; 
+        }
+        &__options
+        {
+            margin: 0px;
+            margin-bottom: 8px;
+            font-size: 1.0em;
+            font-weight: bold;
+            
+            span
+            {
+                margin-left: 10px;
+                font-size: 1.1em;
+                font-weight: bolder; 
+            }
+        }
+    }

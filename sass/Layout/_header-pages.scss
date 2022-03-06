@@ -1,0 +1,43 @@
+.header-pages
+{
+    display: flex;
+    flex-direction: column;
+    
+    &__logo
+    {
+        display: flex;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        height: 55px;
+        width: 100%;
+        justify-content:left;
+        margin-left: 40px;
+        
+        &__fleche
+        {
+            display: block;
+            color:#7e7e7e;
+            padding-top: 18px; 
+        }
+        &__lgo
+        {
+            width: 300px;
+            text-align: center;
+            
+            img
+            {
+                height: 55px;
+                width: 170px; 
+            }
+        }
+    }
+
+    &__image
+    {
+        img
+        {
+            width: 414px;
+            height: 255px;  
+        }
+    }
+}
