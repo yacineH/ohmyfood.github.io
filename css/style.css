@@ -1,55 +1,63 @@
 @media (max-width: 468px) {
   @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
   body {
-    width: 414px;
+    border: 1px solid red;
+    width: 410px;
     background-color: white;
   }
 
   .header__logo {
-    margin-left: 115px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    height: 55px;
-    width: 168px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 25px;
+    width: 140px;
   }
   .header__logo img {
-    height: 55px;
-    width: 168px;
+    height: 25px;
+    width: 140px;
   }
   .header__localisation {
     text-align: center;
-    padding-top: 17px;
-    height: 50px;
-    border-top: 1px solid #f2f2f2;
+    border-top: 1px solid #9c9c9c;
     background-color: #f6f6f6;
-    border-bottom: 1px solid #f2f2f2;
-    color: #353535;
-    font-weight: normal;
-    font-size: 0.9em;
+    border-bottom: 3px solid #f2f2f2;
+    color: #363636;
+    font-weight: bold;
+    font-size: 0.8em;
   }
   .header__localisation i {
-    margin-right: 10px;
-  }
-  .header__reservation {
-    text-align: center;
+    padding-right: 12px;
   }
   .header__reservation h3 {
-    margin-top: 30px;
-    margin-left: 100px;
-    width: 200px;
-    font-weight: normal;
+    margin: auto;
+    text-align: center;
+    width: 170px;
+    font-size: 1em;
+    padding-top: 20px;
+    padding-bottom: 5px;
   }
   .header__reservation p {
-    width: 249px;
-    margin-left: 80px;
-    margin-bottom: 35px;
+    width: 235px;
+    margin: auto;
+    text-align: center;
+    font-size: 0.7em;
+    color: #6b6b6b;
   }
   .header__reservation a {
+    width: 160px;
+    display: block;
+    margin: auto;
     text-decoration: none;
+    text-align: center;
     color: white;
     background-color: #9356DC;
     border-radius: 20px;
     padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    font-weight: bold;
   }
 
   .header-pages {
@@ -67,68 +75,75 @@
   }
   .header-pages__logo__fleche {
     display: block;
-    color: #7e7e7e;
+    color: #444343;
     padding-top: 18px;
+  }
+  .header-pages__logo__fleche .fa-arrow-left {
+    font-size: 1.5em;
+    font-weight: bolder;
   }
   .header-pages__logo__lgo {
     width: 300px;
     text-align: center;
+    margin-top: 15px;
   }
   .header-pages__logo__lgo img {
-    height: 55px;
+    height: 35px;
     width: 170px;
   }
   .header-pages__image img {
-    width: 414px;
+    width: 412px;
     height: 255px;
   }
 
-  .nav {
-    margin-top: 85px;
+  .fonctionnement {
+    margin: auto;
+    margin-top: 45px;
   }
-  .nav__heading {
+  .fonctionnement__heading {
     font-size: 1rem;
     font-weight: bold;
     margin-left: 20px;
   }
-  .nav ul {
-    width: 95%;
-    margin: auto;
-    list-style: none;
-  }
-  .nav ul .fa-1, .nav ul .fa-2, .nav ul .fa-3 {
-    position: relative;
-    font-size: 0.5em;
-    background-color: #9356DC;
-    top: 45px;
-    left: -7px;
-    padding: 6px;
-    border-radius: 30px;
-    color: white;
-    z-index: 2;
-  }
-  .nav__link a {
-    position: relative;
-    padding-left: 25px;
-    padding-top: 25px;
-    display: block;
-    height: 72px;
-    width: 85%;
+  .fonctionnement__etape {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    height: 35px;
+    width: 90%;
     border-radius: 20px;
-    text-decoration: none;
-    color: black;
     box-shadow: 2px 3px 10px #d9d9d9;
     background-color: #f6f6f6;
+    margin-bottom: 10px;
   }
-  .nav__link a i {
-    margin: 0px;
-    padding: 0px;
+  .fonctionnement__etape__lg {
+    text-align: center;
+    width: 40px;
+    font-size: 0.8em;
     color: #7e7e7e;
   }
-  .nav__link a span {
-    margin-left: 35px;
+  .fonctionnement__etape__hd {
+    padding-left: 10px;
+    width: 200px;
   }
-  .nav__link a:hover {
+  .fonctionnement__etape__hd p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 0.8em;
+    font-weight: 700;
+  }
+  .fonctionnement__etape .fa-1, .fonctionnement__etape .fa-2, .fonctionnement__etape .fa-3 {
+    position: relative;
+    left: -8px;
+    background-color: #9356DC;
+    color: white;
+    font-size: 0.4em;
+    padding: 6px;
+    height: 7px;
+    border-radius: 10px;
+  }
+  .fonctionnement__etape:hover {
     background-color: #ff79da;
   }
 
@@ -138,9 +153,10 @@
     padding: 5px;
   }
   .main__heading {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: bold;
-    margin-left: 20px;
+    padding: 10px;
+    margin: 0px;
   }
   .main__card {
     position: relative;
@@ -148,116 +164,278 @@
     text-decoration: none;
     color: black;
     display: block;
+    margin-top: 5px;
   }
   .main__card__content {
-    margin-left: 15px;
     margin-bottom: 25px;
     position: relative;
     box-shadow: 2px 3px 10px #d9d9d9;
-    border-radius: 15px;
     background-color: white;
-    width: 336px;
-    height: 255px;
+    width: 100%;
+    height: 210px;
+    border-radius: 15px;
   }
-  .main__card__content__image img {
-    width: 336px;
-    height: 176px;
+  .main__card__content__image {
+    width: 100%;
+    height: 165px;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .main__card__content__image .image1 {
+    position: relative;
+    top: -60px;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+  }
+  .main__card__content__image .image2 {
+    position: relative;
+    top: -45px;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .main__card__content__image .image3 {
+    position: relative;
+    top: -60px;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .main__card__content__image .image4 {
+    position: relative;
+    top: -65px;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
   .main__card__content__description {
-    width: 90%;
-    height: 80px;
     display: flex;
     justify-content: space-between;
-    height: 70px;
   }
-  .main__card__content__description__heading {
-    margin-left: 10px;
-    margin-top: 10px;
-  }
-  .main__card__content__description__heading h5, .main__card__content__description__heading h6 {
+  .main__card__content__description__heading h5 {
     margin: 0px;
-    padding: 0px;
+    font-size: 0.8em;
+    padding-top: 6px;
+    padding-left: 10px;
   }
   .main__card__content__description__heading h6 {
     margin: 0px;
+    padding-left: 11px;
     padding-top: 5px;
-    font-weight: lighter;
+    font-size: 0.6em;
+    font-weight: 500;
   }
   .main__card__content__description__icon {
-    margin-top: 20px;
+    margin-right: 20px;
+    padding-top: 9px;
+    color: gray;
   }
   .main__card__new {
     text-align: center;
     position: absolute;
-    top: 25px;
-    left: 260px;
+    top: 10px;
+    right: 15px;
     z-index: 1;
-    width: 70px;
-    height: 25px;
+    width: 60px;
+    height: 18px;
     background-color: #99E2D0;
-    color: #3ad6af;
-    font-weight: bold;
+    color: #0a916f;
+    font-weight: bolder;
+    font-size: 0.8em;
     padding-top: 3px;
   }
 
   .main-pages {
     background-color: white;
     position: relative;
-    border-radius: 25px;
+    border-radius: 55px;
     border: 1px solid white;
-    top: -22px;
+    top: -55px;
     z-index: 1;
-    width: 100%;
-    padding-left: 25px;
-    width: 380px;
+    width: 97%;
+    padding-left: 16px;
   }
   .main-pages__restaurant {
-    width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
   .main-pages__restaurant__icon {
-    padding-top: 18px;
+    padding-top: 45px;
+    padding-right: 30px;
   }
-  .main-pages__entrees__recette, .main-pages__plats__recette, .main-pages__dessert__recette {
+  .main-pages__restaurant__icon .fa-heart {
+    font-size: 1.3em;
+  }
+  .main-pages__restaurant p {
+    margin-right: 35px;
+    font-size: 2.1em;
+    font-weight: bolder;
+  }
+  .main-pages__entrees__heading {
+    margin: 0px;
+    font-size: 1.2em;
+  }
+  .main-pages__entrees hr {
+    margin: 0px;
+    width: 55px;
+    border: 1px solid #99E2D0;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  .main-pages__entrees__recette {
     display: flex;
     justify-content: space-between;
-    width: 348px;
+    width: 95%;
     height: 68px;
     box-shadow: 2px 3px 10px #d9d9d9;
     border-radius: 10px;
     margin-bottom: 20px;
   }
-  .main-pages__entrees__recette p, .main-pages__plats__recette p, .main-pages__dessert__recette p {
-    margin: 0px;
-    padding-top: 8px;
-    padding-left: 8px;
-  }
-  .main-pages__entrees__recette p:nth-child(1), .main-pages__plats__recette p:nth-child(1), .main-pages__dessert__recette p:nth-child(1) {
-    font-weight: bold;
-  }
-  .main-pages____entrees__recette__desc, .main-pages____plats__recette__desc, .main-pages____dessert__recette__desc {
+  .main-pages__entrees__recette__desc {
     width: 70%;
   }
-  .main-pages____entrees__recette__prix, .main-pages__plats__recette__prix, .main-pages____dessert__recette__prix {
-    padding-top: 30px;
-    width: 20%;
-  }
-  .main-pages__entrees__recette__check, .main-pages__plats__recette__check, .main-pages__dessert__recette__check {
-    padding-top: 35px;
-    width: 10%;
-  }
-  .main-pages hr {
+  .main-pages__entrees__recette__desc p:nth-child(1) {
+    padding: 0px;
     margin: 0px;
-    width: 30px;
+    padding-top: 10px;
+    padding-left: 5px;
+    font-weight: bold;
+  }
+  .main-pages__entrees__recette__desc p:nth-child(2) {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 3px;
+    padding-left: 5px;
+  }
+  .main-pages__entrees__recette__prix {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+  }
+  .main-pages__entrees__recette__check {
+    display: none;
+    padding-top: 22px;
+  }
+  .main-pages__plats__heading {
+    margin: 0px;
+    font-size: 1.2em;
+  }
+  .main-pages__plats hr {
+    margin: 0px;
+    width: 55px;
     border: 1px solid #99E2D0;
     margin-top: 5px;
     margin-bottom: 15px;
   }
+  .main-pages__plats__recette {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    height: 68px;
+    box-shadow: 2px 3px 10px #d9d9d9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .main-pages__plats__recette__desc {
+    width: 70%;
+  }
+  .main-pages__plats__recette__desc p:nth-child(1) {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 10px;
+    padding-left: 5px;
+    font-weight: bold;
+  }
+  .main-pages__plats__recette__desc p:nth-child(2) {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 3px;
+    padding-left: 5px;
+  }
+  .main-pages__plats__recette__prix {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+  }
+  .main-pages__plats__recette__check {
+    display: none;
+    padding-top: 22px;
+  }
+  .main-pages__dessert__heading {
+    margin: 0px;
+    font-size: 1.2em;
+  }
+  .main-pages__dessert hr {
+    margin: 0px;
+    width: 55px;
+    border: 1px solid #99E2D0;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  .main-pages__dessert__recette {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    height: 68px;
+    box-shadow: 2px 3px 10px #d9d9d9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .main-pages__dessert__recette__desc {
+    width: 70%;
+  }
+  .main-pages__dessert__recette__desc p:nth-child(1) {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 10px;
+    padding-left: 5px;
+    font-weight: bold;
+  }
+  .main-pages__dessert__recette__desc p:nth-child(2) {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 3px;
+    padding-left: 5px;
+  }
+  .main-pages__dessert__recette__prix {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+  }
+  .main-pages__dessert__recette__check {
+    display: none;
+    padding-top: 22px;
+  }
+  .main-pages__btn {
+    margin: auto;
+    margin-top: 40px;
+    width: 180px;
+    height: 40px;
+    padding-top: 12px;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: crimson;
+  }
 
   .footer {
+    margin-top: 8px;
     color: white;
     padding-left: 22px;
     padding-top: 12px;

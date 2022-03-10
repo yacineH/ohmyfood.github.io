@@ -15,18 +15,27 @@
         
         &__fleche
         {
+           
             display: block;
-            color:#7e7e7e;
+            color:#444343;
             padding-top: 18px; 
+
+            .fa-arrow-left{
+                font-size: 1.5em;
+                font-weight: bolder;
+            }
         }
         &__lgo
         {
+
             width: 300px;
             text-align: center;
+            margin-top: 15px;
             
             img
             {
-                height: 55px;
+                
+                height: 35px;
                 width: 170px; 
             }
         }
@@ -36,7 +45,7 @@
     {
         img
         {
-            width: 414px;
+            width: 412px;
             height: 255px;  
         }
     }

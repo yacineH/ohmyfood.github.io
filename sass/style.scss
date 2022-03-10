@@ -1,14 +1,12 @@
 @media (max-width: 468px)
 { 
     @import "./Base/base";
-
-    @import "./Base/body";
     
     @import "./Layout/header";
 
     @import "./Layout/header-pages";
 
-    @import "./Composants/navigation";
+    @import "./Composants/fonctionnement";
 
     @import "./Composants/main";
 
