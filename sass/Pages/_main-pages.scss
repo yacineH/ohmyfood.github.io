@@ -1,3 +1,5 @@
+$divisions:entrees,plats,dessert;
+
 .main-pages
 {
     background-color: white;
@@ -30,179 +32,77 @@
         }
     }
 
-    &__entrees{
-        &__heading{
-            margin: 0px;
-            font-size: 1.2em;
-        }
-        hr
-        {
-            margin: 0px;
-            width: 55px;
-            border: 1px solid #99E2D0;
-            margin-top: 5px;
-            margin-bottom: 15px;
-    
-        }
-        &__recette
-        {
-            display: flex;
-            justify-content: space-between;
-            width: 95%;
-            height: 68px;
-            box-shadow:2px 3px 10px #d9d9d9;
-            border-radius: 10px;
-            margin-bottom: 20px;
- 
-            &__desc
+
+    @each $division in $divisions {
+        &__#{$division}{
+            &__heading{
+                margin: 0px;
+                font-size: 1.2em;
+            }
+            hr
             {
-                width: 70%;
-                p:nth-child(1){            
-                  padding: 0px;
-                  margin: 0px;
-                  padding-top: 10px;
-                  padding-left: 5px;
-                  font-weight: bold;
+                margin: 0px;
+                width: 55px;
+                border: 1px solid #99E2D0;
+                margin-top: 5px;
+                margin-bottom: 15px;
+        
+            }
+            &__recette
+            {
+                display: flex;
+                justify-content: space-between;
+                width: 95%;
+                height: 68px;
+                box-shadow:2px 3px 10px #d9d9d9;
+                border-radius: 15px;
+                margin-bottom: 20px;
+     
+                &__desc
+                {
+                    width: 70%;
+                    p:nth-child(1){            
+                      padding: 0px;
+                      margin: 0px;
+                      padding-top: 10px;
+                      padding-left: 5px;
+                      font-weight: bold;
+                    }
+                    p:nth-child(2){
+                        padding: 0px;
+                        margin: 0px;
+                        padding-top: 3px;
+                        padding-left: 5px;
+                    }
                 }
-                p:nth-child(2){
+                &__prix
+                {
                     padding: 0px;
                     margin: 0px;
-                    padding-top: 3px;
-                    padding-left: 5px;
+                    padding-top: 15px; 
+                    padding-right: 15px;              
+                    font-weight: bold;  
                 }
-            }
-            &__prix
-            {
-                padding: 0px;
-                margin: 0px;
-                padding-top: 15px; 
-                padding-right: 15px;              
-                font-weight: bold;  
-            }
-            &__check
-            {
-                display: none;
-                padding-top: 22px;
-
-            }
+                &__check
+                {
+                    text-align: center;
+                    width: 50px;
+                    padding-top: 22px;
+                    background-color: #99E2D0;
+                    border-top-right-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                    .fa-check{
+                        background-color: white;
+                        padding: 5px;
+                        border-radius: 12px;
+                        color: #99E2D0;
+                    }
+                }
     
-        }
+            }
+        } 
     }
 
-    &__plats{
-        &__heading{
-            margin: 0px;
-            font-size: 1.2em;
-        }
-        hr
-        {
-            margin: 0px;
-            width: 55px;
-            border: 1px solid #99E2D0;
-            margin-top: 5px;
-            margin-bottom: 15px;
-    
-        }
-        &__recette
-        {
-            display: flex;
-            justify-content: space-between;
-            width: 95%;
-            height: 68px;
-            box-shadow:2px 3px 10px #d9d9d9;
-            border-radius: 10px;
-            margin-bottom: 20px;
-
- 
-            &__desc
-            {
-                width: 70%;
-                p:nth-child(1){            
-                  padding: 0px;
-                  margin: 0px;
-                  padding-top: 10px;
-                  padding-left: 5px;
-                  font-weight: bold;
-                }
-                p:nth-child(2){
-                    padding: 0px;
-                    margin: 0px;
-                    padding-top: 3px;
-                    padding-left: 5px;
-                }
-            }
-            &__prix
-            {
-                padding: 0px;
-                margin: 0px;
-                padding-top: 15px;
-                padding-right: 15px;               
-                font-weight: bold;  
-            }
-            &__check
-            {
-                display: none;
-                padding-top: 22px;
-            }
-        }
-    }
-    &__dessert{
-        &__heading{
-            margin: 0px;
-            font-size: 1.2em;
-        }
-        hr
-        {
-            margin: 0px;
-            width: 55px;
-            border: 1px solid #99E2D0;
-            margin-top: 5px;
-            margin-bottom: 15px;
-    
-        }
-        &__recette
-        {
-            display: flex;
-            justify-content: space-between;
-            width: 95%;
-            height: 68px;
-            box-shadow:2px 3px 10px #d9d9d9;
-            border-radius: 10px;
-            margin-bottom: 20px;
-
- 
-            &__desc
-            {
-                width: 70%;
-                p:nth-child(1){            
-                  padding: 0px;
-                  margin: 0px;
-                  padding-top: 10px;
-                  padding-left: 5px;
-                  font-weight: bold;
-                }
-                p:nth-child(2){
-                    padding: 0px;
-                    margin: 0px;
-                    padding-top: 3px;
-                    padding-left: 5px;
-                }
-            }
-            &__prix
-            {
-                padding: 0px;
-                margin: 0px;
-                padding-top: 15px;               
-                padding-right: 15px; 
-                font-weight: bold; 
-            }
-            &__check
-            {
-                display: none;
-                padding-top: 22px;
-            }
-        }
-    }
 
     &__btn{
         margin: auto;
@@ -215,7 +115,7 @@
         color:white;
         font-size: 1.1em;
         font-weight: bold;
-        background-color: crimson;
+        background-color: #9356DC;
 
     }
 }

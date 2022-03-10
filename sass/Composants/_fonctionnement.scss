@@ -14,20 +14,19 @@
         margin-left: 15px;
         display: flex;
         flex-direction: row;
-        padding-top: 15px;
-        height: 35px;
+        align-items: center;
+        height: 55px;
         width: 90%;
         border-radius: 20px;
         box-shadow:2px 3px 10px #d9d9d9;
         background-color:#f6f6f6 ; 
-        margin-bottom: 10px;
-       
-       
+        margin-bottom: 20px;
+         
         &__lg
         {
             text-align: center;
             width: 40px;
-            font-size: .8em;
+            font-size: 1.0em;
             color:#7e7e7e;
         }
 

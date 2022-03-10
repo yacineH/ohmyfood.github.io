@@ -1,3 +1,4 @@
+$clr_bg_footer: #353535;
     .footer
     {
         margin-top: 8px;
@@ -5,7 +6,7 @@
         padding-left: 22px;
         padding-top: 12px;
         height: 230px;
-        background-color: #353535;
+        background-color:$clr_bg_footer;
 
         .fa-utensils
         {
