@@ -34,7 +34,7 @@
     {
         position: relative;
         left: -8px;
-        background-color: $cl-violet;
+        background-color: $cl-primaire;
         color:white;
         font-size: .6em;
         padding: 8px;
@@ -156,7 +156,7 @@
                 .fa-heart{
                     color:darken($cl-gris,30%);
                     &:hover{
-                        color: $cl-violet;
+                        color: $cl-primaire;
                     }
                 }                                  
             }
@@ -173,8 +173,8 @@
     z-index: 1;
     width: 80px;
     height: 22px;
-    background-color: lighten($color: $cl-vert, $amount: 50%);
-    color: $cl-vert;
+    background-color: lighten($color: $cl-tertiare, $amount: 50%);
+    color: $cl-tertiare;
     font-weight: bolder;
     font-size: .8em;
     padding-top: 5px;

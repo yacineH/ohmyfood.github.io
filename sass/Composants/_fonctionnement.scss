@@ -10,7 +10,7 @@
     {
         @include etape;
         &--modifier{
-          @include etape(lighten($cl-violet,35%), $cl-violet);
+          @include etape(lighten($cl-primaire,35%), $cl-primaire);
         }
     }
 }
