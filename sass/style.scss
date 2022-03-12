@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
 @media (max-width: 468px)
 { 
     @import "./Base/base";
+
+    @import "./Utils/variables";
+
+    @import "./Utils/mixins";
     
     @import "./Layout/header";
 

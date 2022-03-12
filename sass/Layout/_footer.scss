@@ -1,35 +1,33 @@
-$clr_bg_footer: #353535;
-    .footer
+.footer
+{
+    margin-top: 8px;
+    color:white;
+    padding-left: 22px;
+    padding-top: 12px;
+    height: 230px;
+    background-color:$clr_bg_footer;
+
+    .fa-utensils
     {
-        margin-top: 8px;
-        color:white;
-        padding-left: 22px;
-        padding-top: 12px;
-        height: 230px;
-        background-color:$clr_bg_footer;
+        padding-right: 5px; 
+    }
 
-        .fa-utensils
+    &__heading
+    {
+        font-family: 'Shrikhand', cursive; 
+        font-size: 1.4em;
+    }
+    &__options
+    {
+        margin: 0px;
+        margin-bottom: 12px;
+        font-size: 1.0em;
+        font-weight: bold;
+        
+        span
         {
-            padding-right: 5px; 
-        }
-
-        &__heading
-        {
-            font-family: 'Shrikhand', cursive;
-            font-weight: lighter; 
-        }
-        &__options
-        {
-            margin: 0px;
-            margin-bottom: 8px;
-            font-size: 1.0em;
-            font-weight: bold;
-            
-            span
-            {
-                margin-left: 10px;
-                font-size: 1.1em;
-                font-weight: bolder; 
-            }
+            margin-left: 10px;
+            font-size: 1.1em;           
         }
     }
+}

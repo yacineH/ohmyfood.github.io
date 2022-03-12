@@ -1,65 +1,16 @@
 .fonctionnement
 {
     margin:auto; 
-    margin-top: 45px;
 
     &__heading
     {
-        font-size: 1.0rem;
-        font-weight: bold;
-        margin-left: 20px;
+        @include title;
     }  
     &__etape
     {
-        margin-left: 15px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        height: 55px;
-        width: 90%;
-        border-radius: 20px;
-        box-shadow:2px 3px 10px #d9d9d9;
-        background-color:#f6f6f6 ; 
-        margin-bottom: 20px;
-         
-        &__lg
-        {
-            text-align: center;
-            width: 40px;
-            font-size: 1.0em;
-            color:#7e7e7e;
-        }
-
-        &__hd
-        {
-          padding-left: 10px;
-            width: 200px;
-          
-            
-            p{
-                padding: 0px;
-                margin: 0px;
-                font-size: .8em;
-                font-weight: 700;
-            }
-        }
-    
-
-        .fa-1,.fa-2,.fa-3
-        {
-            position: relative;
-            left: -8px;
-            background-color: #9356DC;
-            color:white;
-            font-size: .4em;
-            padding: 6px;
-            height: 7px;
-            border-radius: 20px *.5;
-        }
-
-        &:hover
-        {
-            background-color:#ff79da ; 
+        @include etape;
+        &--modifier{
+          @include etape(lighten($cl-violet,35%), $cl-violet);
         }
     }
 }

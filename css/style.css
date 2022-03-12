@@ -1,61 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @media (max-width: 468px) {
-  @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
   body {
-    width: 410px;
+    width: 414px;
     background-color: white;
+    font-family: sans-serif;
   }
 
   .header__logo {
     margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    height: 25px;
-    width: 140px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    height: 35px;
+    width: 200px;
   }
   .header__logo img {
-    height: 25px;
-    width: 140px;
+    height: 35px;
+    width: 200px;
   }
   .header__localisation {
-    text-align: center;
-    border-top: 1px solid #9c9c9c;
-    background-color: #f6f6f6;
-    border-bottom: 3px solid #f2f2f2;
-    color: #363636;
-    font-weight: bold;
-    font-size: 0.8em;
+    border-top: 3px solid #d6d6d6;
+    background-color: #ededed;
+    color: #404040;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .header__localisation p {
+    margin: auto;
+    width: 200px;
+    padding-left: 8px;
+    font-size: 1.1em;
   }
   .header__localisation i {
-    padding-right: 12px;
+    padding-right: 10px;
+    font-size: 0.9em;
+  }
+  .header__reservation {
+    background-color: #f3f3f3;
+    padding-bottom: 40px;
+    padding-top: 55px;
   }
   .header__reservation h3 {
     margin: auto;
     text-align: center;
-    width: 170px;
-    font-size: 1em;
-    padding-top: 20px;
-    padding-bottom: 5px;
+    width: 270px;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 15px;
   }
   .header__reservation p {
-    width: 235px;
+    width: 280px;
     margin: auto;
     text-align: center;
-    font-size: 0.7em;
-    color: #6b6b6b;
+    font-size: 1em;
+    color: gray;
+    margin-bottom: 30px;
   }
   .header__reservation a {
-    width: 160px;
+    width: 190px;
     display: block;
     margin: auto;
     text-decoration: none;
     text-align: center;
     color: white;
     background-color: #9356DC;
-    border-radius: 20px;
-    padding: 10px;
-    margin-top: 20px;
+    border-radius: 35px;
+    padding: 20px;
+    margin-top: 40px;
     margin-bottom: 30px;
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: bold;
   }
 
@@ -97,30 +109,30 @@
 
   .fonctionnement {
     margin: auto;
-    margin-top: 45px;
   }
   .fonctionnement__heading {
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: bold;
     margin-left: 20px;
+    margin-top: 50px;
   }
   .fonctionnement__etape {
-    margin-left: 15px;
+    margin-left: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 55px;
-    width: 90%;
+    height: 70px;
+    width: 85%;
     border-radius: 20px;
     box-shadow: 2px 3px 10px #d9d9d9;
-    background-color: #f6f6f6;
+    background-color: white;
     margin-bottom: 20px;
   }
   .fonctionnement__etape__lg {
     text-align: center;
     width: 40px;
     font-size: 1em;
-    color: #7e7e7e;
+    color: #8d8d8d;
   }
   .fonctionnement__etape__hd {
     padding-left: 10px;
@@ -129,7 +141,7 @@
   .fonctionnement__etape__hd p {
     padding: 0px;
     margin: 0px;
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: 700;
   }
   .fonctionnement__etape .fa-1, .fonctionnement__etape .fa-2, .fonctionnement__etape .fa-3 {
@@ -137,13 +149,48 @@
     left: -8px;
     background-color: #9356DC;
     color: white;
-    font-size: 0.4em;
-    padding: 6px;
+    font-size: 0.6em;
+    padding: 8px;
     height: 7px;
-    border-radius: 10px;
+    border-radius: 20px;
   }
-  .fonctionnement__etape:hover {
-    background-color: #ff79da;
+  .fonctionnement__etape--modifier {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70px;
+    width: 85%;
+    border-radius: 20px;
+    box-shadow: 2px 3px 10px #d9d9d9;
+    background-color: #f2eafb;
+    margin-bottom: 20px;
+  }
+  .fonctionnement__etape--modifier__lg {
+    text-align: center;
+    width: 40px;
+    font-size: 1em;
+    color: #9356DC;
+  }
+  .fonctionnement__etape--modifier__hd {
+    padding-left: 10px;
+    width: 200px;
+  }
+  .fonctionnement__etape--modifier__hd p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 0.9em;
+    font-weight: 700;
+  }
+  .fonctionnement__etape--modifier .fa-1, .fonctionnement__etape--modifier .fa-2, .fonctionnement__etape--modifier .fa-3 {
+    position: relative;
+    left: -8px;
+    background-color: #9356DC;
+    color: white;
+    font-size: 0.6em;
+    padding: 8px;
+    height: 7px;
+    border-radius: 20px;
   }
 
   .main {
@@ -152,10 +199,10 @@
     padding: 5px;
   }
   .main__heading {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: bold;
-    padding: 10px;
-    margin: 0px;
+    margin-left: 20px;
+    margin-top: 50px;
   }
   .main__card {
     position: relative;
@@ -164,35 +211,37 @@
     color: black;
     display: block;
     margin-top: 5px;
+    padding-bottom: 30px;
   }
   .main__card__content {
     margin-bottom: 25px;
     position: relative;
     box-shadow: 2px 3px 10px #d9d9d9;
     background-color: white;
-    width: 100%;
-    height: 210px;
+    width: 90%;
+    height: 260px;
     border-radius: 15px;
+    margin-left: 15px;
+    cursor: pointer;
   }
   .main__card__content__image {
-    width: 100%;
-    height: 165px;
+    height: 180px;
     overflow: hidden;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
   .main__card__content__image .image1 {
     position: relative;
-    top: -60px;
+    top: -50px;
     width: 100%;
     height: 230px;
     object-fit: cover;
   }
   .main__card__content__image .image2 {
     position: relative;
-    top: -45px;
-    width: 100%;
-    height: 210px;
+    top: -65px;
+    width: 360px;
+    height: 240px;
     object-fit: cover;
   }
   .main__card__content__image .image3 {
@@ -215,35 +264,126 @@
   }
   .main__card__content__description__heading h5 {
     margin: 0px;
-    font-size: 0.8em;
-    padding-top: 6px;
-    padding-left: 10px;
+    font-size: 1.1em;
+    padding-top: 15px;
+    font-weight: bold;
+    padding-left: 15px;
   }
   .main__card__content__description__heading h6 {
     margin: 0px;
-    padding-left: 11px;
+    padding-left: 15px;
     padding-top: 5px;
-    font-size: 0.6em;
+    font-size: 1em;
     font-weight: 500;
   }
   .main__card__content__description__icon {
-    margin-right: 20px;
-    padding-top: 9px;
-    color: gray;
+    margin-right: 35px;
+    padding-top: 15px;
+    font-size: 1.6em;
   }
-  .main__card__new {
+  .main__card__content__description__icon .fa-heart {
+    color: #8d8d8d;
+  }
+  .main__card__content__description__icon .fa-heart:hover {
+    color: #9356DC;
+  }
+  .main__card--modifier {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-top: 5px;
+    padding-bottom: 30px;
+  }
+  .main__card--modifier__content {
+    margin-bottom: 25px;
+    position: relative;
+    box-shadow: 2px 3px 10px #d9d9d9;
+    background-color: white;
+    width: 90%;
+    height: 260px;
+    border-radius: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  .main__card--modifier__content__image {
+    height: 180px;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .main__card--modifier__content__image .image1 {
+    position: relative;
+    top: -50px;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+  }
+  .main__card--modifier__content__image .image2 {
+    position: relative;
+    top: -65px;
+    width: 360px;
+    height: 240px;
+    object-fit: cover;
+  }
+  .main__card--modifier__content__image .image3 {
+    position: relative;
+    top: -60px;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+  }
+  .main__card--modifier__content__image .image4 {
+    position: relative;
+    top: -65px;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+  }
+  .main__card--modifier__content__description {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main__card--modifier__content__description__heading h5 {
+    margin: 0px;
+    font-size: 1.1em;
+    padding-top: 15px;
+    font-weight: bold;
+    padding-left: 15px;
+  }
+  .main__card--modifier__content__description__heading h6 {
+    margin: 0px;
+    padding-left: 15px;
+    padding-top: 5px;
+    font-size: 1em;
+    font-weight: 500;
+  }
+  .main__card--modifier__content__description__icon {
+    margin-right: 35px;
+    padding-top: 15px;
+    font-size: 1.6em;
+  }
+  .main__card--modifier__content__description__icon .fa-heart {
+    color: #8d8d8d;
+  }
+  .main__card--modifier__content__description__icon .fa-heart:hover {
+    color: #9356DC;
+  }
+  .main__card--modifier__new {
     text-align: center;
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: 12px;
+    right: 43px;
     z-index: 1;
-    width: 60px;
-    height: 18px;
-    background-color: #99E2D0;
+    width: 80px;
+    height: 22px;
+    background-color: #a1f9e3;
     color: #0a916f;
     font-weight: bolder;
     font-size: 0.8em;
-    padding-top: 3px;
+    padding-top: 5px;
+    border-radius: 2px;
   }
 
   .main-pages {
@@ -470,18 +610,17 @@
   }
   .footer__heading {
     font-family: "Shrikhand", cursive;
-    font-weight: lighter;
+    font-size: 1.4em;
   }
   .footer__options {
     margin: 0px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     font-size: 1em;
     font-weight: bold;
   }
   .footer__options span {
     margin-left: 10px;
     font-size: 1.1em;
-    font-weight: bolder;
   }
 }
 
