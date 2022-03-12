@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @media (max-width: 468px) {
   body {
-    width: 414px;
+    width: 412px;
     background-color: white;
     font-family: sans-serif;
   }
@@ -74,37 +74,40 @@
   .header-pages {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    border: 1px solid red;
   }
   .header-pages__logo {
     display: flex;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    height: 55px;
-    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 10px;
     justify-content: left;
-    margin-left: 40px;
+    margin-left: 30px;
   }
   .header-pages__logo__fleche {
     display: block;
-    color: #444343;
-    padding-top: 18px;
+    color: #5a5a5a;
+    padding-top: 8px;
   }
   .header-pages__logo__fleche .fa-arrow-left {
-    font-size: 1.5em;
-    font-weight: bolder;
+    font-size: 1.4em;
+    font-weight: bold;
   }
   .header-pages__logo__lgo {
     width: 300px;
     text-align: center;
-    margin-top: 15px;
   }
   .header-pages__logo__lgo img {
     height: 35px;
     width: 170px;
   }
+  .header-pages__image {
+    overflow: hidden;
+  }
   .header-pages__image img {
-    width: 412px;
-    height: 255px;
+    width: 420px;
+    height: 305px;
+    object-fit: cover;
   }
 
   .fonctionnement {
@@ -391,41 +394,44 @@
     position: relative;
     border-radius: 55px;
     border: 1px solid white;
-    top: -55px;
+    top: -65px;
     z-index: 1;
-    width: 97%;
+    width: 98%;
     padding-left: 16px;
   }
   .main-pages__restaurant {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
   .main-pages__restaurant__icon {
-    padding-top: 45px;
-    padding-right: 30px;
+    margin-right: 50px;
+    padding-top: 30px;
   }
   .main-pages__restaurant__icon .fa-heart {
-    font-size: 1.3em;
+    color: #737373;
+    font-size: 1.6em;
+    font-weight: lighter;
   }
   .main-pages__restaurant p {
-    margin-right: 35px;
-    font-size: 2.1em;
-    font-weight: bolder;
+    font-family: "Shrikhand", cursive;
+    margin-right: 15px;
+    font-size: 1.8em;
+    font-weight: 100;
   }
   .main-pages__entrees__heading {
     margin: 0px;
-    font-size: 1.2em;
+    font-size: 1em;
+    color: #5a5a5a;
   }
   .main-pages__entrees hr {
     margin: 0px;
-    width: 55px;
-    border: 1px solid #99E2D0;
+    width: 35px;
+    border: 1px solid #a1f9e3;
     margin-top: 5px;
     margin-bottom: 15px;
   }
   .main-pages__entrees__recette {
     display: flex;
-    justify-content: space-between;
     width: 95%;
     height: 68px;
     box-shadow: 2px 3px 10px #d9d9d9;
@@ -433,25 +439,27 @@
     margin-bottom: 20px;
   }
   .main-pages__entrees__recette__desc {
-    width: 70%;
+    width: 80%;
   }
   .main-pages__entrees__recette__desc p:nth-child(1) {
     padding: 0px;
     margin: 0px;
-    padding-top: 10px;
+    padding-top: 12px;
     padding-left: 5px;
+    font-size: 1em;
     font-weight: bold;
   }
   .main-pages__entrees__recette__desc p:nth-child(2) {
     padding: 0px;
     margin: 0px;
-    padding-top: 3px;
+    font-size: 0.9em;
+    padding-top: 8px;
     padding-left: 5px;
   }
   .main-pages__entrees__recette__prix {
     padding: 0px;
     margin: 0px;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-right: 15px;
     font-weight: bold;
   }
@@ -467,22 +475,22 @@
     background-color: white;
     padding: 5px;
     border-radius: 12px;
-    color: #99E2D0;
+    color: #a1f9e3;
   }
   .main-pages__plats__heading {
     margin: 0px;
-    font-size: 1.2em;
+    font-size: 1em;
+    color: #5a5a5a;
   }
   .main-pages__plats hr {
     margin: 0px;
-    width: 55px;
-    border: 1px solid #99E2D0;
+    width: 35px;
+    border: 1px solid #a1f9e3;
     margin-top: 5px;
     margin-bottom: 15px;
   }
   .main-pages__plats__recette {
     display: flex;
-    justify-content: space-between;
     width: 95%;
     height: 68px;
     box-shadow: 2px 3px 10px #d9d9d9;
@@ -490,25 +498,27 @@
     margin-bottom: 20px;
   }
   .main-pages__plats__recette__desc {
-    width: 70%;
+    width: 80%;
   }
   .main-pages__plats__recette__desc p:nth-child(1) {
     padding: 0px;
     margin: 0px;
-    padding-top: 10px;
+    padding-top: 12px;
     padding-left: 5px;
+    font-size: 1em;
     font-weight: bold;
   }
   .main-pages__plats__recette__desc p:nth-child(2) {
     padding: 0px;
     margin: 0px;
-    padding-top: 3px;
+    font-size: 0.9em;
+    padding-top: 8px;
     padding-left: 5px;
   }
   .main-pages__plats__recette__prix {
     padding: 0px;
     margin: 0px;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-right: 15px;
     font-weight: bold;
   }
@@ -524,22 +534,22 @@
     background-color: white;
     padding: 5px;
     border-radius: 12px;
-    color: #99E2D0;
+    color: #a1f9e3;
   }
   .main-pages__dessert__heading {
     margin: 0px;
-    font-size: 1.2em;
+    font-size: 1em;
+    color: #5a5a5a;
   }
   .main-pages__dessert hr {
     margin: 0px;
-    width: 55px;
-    border: 1px solid #99E2D0;
+    width: 35px;
+    border: 1px solid #a1f9e3;
     margin-top: 5px;
     margin-bottom: 15px;
   }
   .main-pages__dessert__recette {
     display: flex;
-    justify-content: space-between;
     width: 95%;
     height: 68px;
     box-shadow: 2px 3px 10px #d9d9d9;
@@ -547,25 +557,27 @@
     margin-bottom: 20px;
   }
   .main-pages__dessert__recette__desc {
-    width: 70%;
+    width: 80%;
   }
   .main-pages__dessert__recette__desc p:nth-child(1) {
     padding: 0px;
     margin: 0px;
-    padding-top: 10px;
+    padding-top: 12px;
     padding-left: 5px;
+    font-size: 1em;
     font-weight: bold;
   }
   .main-pages__dessert__recette__desc p:nth-child(2) {
     padding: 0px;
     margin: 0px;
-    padding-top: 3px;
+    font-size: 0.9em;
+    padding-top: 8px;
     padding-left: 5px;
   }
   .main-pages__dessert__recette__prix {
     padding: 0px;
     margin: 0px;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-right: 15px;
     font-weight: bold;
   }
@@ -581,15 +593,15 @@
     background-color: white;
     padding: 5px;
     border-radius: 12px;
-    color: #99E2D0;
+    color: #a1f9e3;
   }
   .main-pages__btn {
     margin: auto;
     margin-top: 40px;
     width: 180px;
-    height: 40px;
-    padding-top: 12px;
-    border-radius: 25px;
+    height: 20px;
+    padding: 20px;
+    border-radius: 45px;
     text-align: center;
     color: white;
     font-size: 1.1em;

@@ -14,7 +14,7 @@
 
     &__heading
     {
-        font-family: 'Shrikhand', cursive; 
+        @include font-family;
         font-size: 1.4em;
     }
     &__options

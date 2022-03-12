@@ -2,27 +2,26 @@
 {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    border:1px solid red;
     
     &__logo
     {
         display: flex;
-        margin-bottom: 20px;
-        margin-top: 20px;
-        height: 55px;
-        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 10px;
         justify-content:left;
-        margin-left: 40px;
+        margin-left: 30px;
         
         &__fleche
         {
-           
             display: block;
-            color:#444343;
-            padding-top: 18px; 
+            color:darken($cl-gris,50%);
+            padding-top: 8px;
 
             .fa-arrow-left{
-                font-size: 1.5em;
-                font-weight: bolder;
+                font-size: 1.4em;
+                font-weight: bold;
             }
         }
         &__lgo
@@ -30,11 +29,9 @@
 
             width: 300px;
             text-align: center;
-            margin-top: 15px;
             
             img
-            {
-                
+            {                
                 height: 35px;
                 width: 170px; 
             }
@@ -43,10 +40,12 @@
 
     &__image
     {
+        overflow: hidden;
         img
         {
-            width: 412px;
-            height: 255px;  
+            width: 420px;
+            height: 305px; 
+            object-fit: cover; 
         }
     }
 }

@@ -180,3 +180,31 @@
     padding-top: 5px;
     border-radius: 2px;
 }
+
+@mixin font-family{
+    font-family: 'Shrikhand', cursive; 
+}
+
+@mixin title-restaurant{
+
+    display: flex;
+    justify-content:space-between;
+  
+    
+    &__icon
+    {
+        margin-right: 50px;
+        padding-top: 30px;
+        .fa-heart{
+            color: darken($cl-gris,40%);
+            font-size: 1.6em;
+            font-weight: lighter;
+        } 
+    }
+    p{
+        @include font-family;
+        margin-right: 15px;
+        font-size: 1.8em;
+        font-weight:100;
+    }
+}
