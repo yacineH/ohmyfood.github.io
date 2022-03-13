@@ -439,6 +439,10 @@
     font-size: 1.8em;
     font-weight: 100;
   }
+  .main-pages__entrees {
+    transform: scale(1);
+    transition: transform 1000ms ease-in 500ms;
+  }
   .main-pages__entrees__heading {
     margin: 0px;
     font-size: 1em;
@@ -486,10 +490,26 @@
   }
   .main-pages__entrees__recette__check {
     width: 10%;
-    display: none;
+    transform: scale(0);
+    text-align: center;
+    width: 40px;
+    padding-top: 22px;
+    background-color: #99E2D0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: all 450ms;
+    transform-origin: right;
+  }
+  .main-pages__entrees__recette__check .fa-check {
+    transform: rotate(0deg);
+    transition: transform 450ms;
+    background-color: white;
+    padding: 5px;
+    border-radius: 12px;
+    color: #a1f9e3;
   }
   .main-pages__entrees__recette:hover > .main-pages__entrees__recette__check {
-    display: block;
+    transform: scale(1);
     text-align: center;
     width: 40px;
     padding-top: 22px;
@@ -498,10 +518,18 @@
     border-bottom-right-radius: 15px;
   }
   .main-pages__entrees__recette:hover > .main-pages__entrees__recette__check .fa-check {
+    transform: rotate(-360deg);
     background-color: white;
     padding: 5px;
     border-radius: 12px;
     color: #a1f9e3;
+  }
+  .main-pages__entrees:hover {
+    transform: scale(0.5);
+  }
+  .main-pages__plats {
+    transform: scale(1);
+    transition: transform 1000ms ease-in 500ms;
   }
   .main-pages__plats__heading {
     margin: 0px;
@@ -550,10 +578,26 @@
   }
   .main-pages__plats__recette__check {
     width: 10%;
-    display: none;
+    transform: scale(0);
+    text-align: center;
+    width: 40px;
+    padding-top: 22px;
+    background-color: #99E2D0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: all 450ms;
+    transform-origin: right;
+  }
+  .main-pages__plats__recette__check .fa-check {
+    transform: rotate(0deg);
+    transition: transform 450ms;
+    background-color: white;
+    padding: 5px;
+    border-radius: 12px;
+    color: #a1f9e3;
   }
   .main-pages__plats__recette:hover > .main-pages__plats__recette__check {
-    display: block;
+    transform: scale(1);
     text-align: center;
     width: 40px;
     padding-top: 22px;
@@ -562,10 +606,18 @@
     border-bottom-right-radius: 15px;
   }
   .main-pages__plats__recette:hover > .main-pages__plats__recette__check .fa-check {
+    transform: rotate(-360deg);
     background-color: white;
     padding: 5px;
     border-radius: 12px;
     color: #a1f9e3;
+  }
+  .main-pages__plats:hover {
+    transform: scale(0.5);
+  }
+  .main-pages__dessert {
+    transform: scale(1);
+    transition: transform 1000ms ease-in 500ms;
   }
   .main-pages__dessert__heading {
     margin: 0px;
@@ -614,10 +666,26 @@
   }
   .main-pages__dessert__recette__check {
     width: 10%;
-    display: none;
+    transform: scale(0);
+    text-align: center;
+    width: 40px;
+    padding-top: 22px;
+    background-color: #99E2D0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: all 450ms;
+    transform-origin: right;
+  }
+  .main-pages__dessert__recette__check .fa-check {
+    transform: rotate(0deg);
+    transition: transform 450ms;
+    background-color: white;
+    padding: 5px;
+    border-radius: 12px;
+    color: #a1f9e3;
   }
   .main-pages__dessert__recette:hover > .main-pages__dessert__recette__check {
-    display: block;
+    transform: scale(1);
     text-align: center;
     width: 40px;
     padding-top: 22px;
@@ -626,10 +694,14 @@
     border-bottom-right-radius: 15px;
   }
   .main-pages__dessert__recette:hover > .main-pages__dessert__recette__check .fa-check {
+    transform: rotate(-360deg);
     background-color: white;
     padding: 5px;
     border-radius: 12px;
     color: #a1f9e3;
+  }
+  .main-pages__dessert:hover {
+    transform: scale(0.5);
   }
   .main-pages__btn {
     width: 180px;

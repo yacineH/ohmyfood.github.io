@@ -67,29 +67,14 @@
                     padding-top: 20px;              
                     font-weight: bold;  
                 }
-                &__check{
-                    width: 10%;
-                    display: none;
-                }   
+                @include check;
+            }
 
-
-                &:hover > &__check
-                {
-                    display:block;
-                    text-align: center;
-                    width: 40px;
-                    padding-top: 22px;
-                    background-color: #99E2D0;
-                    border-top-right-radius: 15px;
-                    border-bottom-right-radius: 15px;
-                    .fa-check{
-                        background-color: white;
-                        padding: 5px;
-                        border-radius: 12px;
-                        color: lighten($cl-tertiare, 50%);
-                    }
-                }
-    
+            transform:scale(1);
+            transition:transform 1000ms ease-in 500ms;
+            
+            &:hover{
+                transform:scale(.5);
             }
 
         } 

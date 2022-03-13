@@ -156,8 +156,10 @@
 
                 .fa-heart{
                     color:darken($cl-gris,30%);
+
                     &:hover{
-                        color: $cl-primaire;
+                    color: $cl-primaire;
+
                     }
                 }                                  
             }
@@ -251,4 +253,48 @@
         font-size: 1.8em;
         font-weight:100;
     }
+}
+
+@mixin check{
+
+    &__check{
+        width: 10%;
+        transform:scale(0);
+        text-align: center;
+        width: 40px;
+        padding-top: 22px;
+        background-color: #99E2D0;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        .fa-check{
+            transform:rotate(0deg);
+            transition :transform 450ms;
+            background-color: white;
+            padding: 5px;
+            border-radius: 12px;
+            color: lighten($cl-tertiare, 50%);
+        }
+        transition:all 450ms;
+        transform-origin: right;
+    }   
+
+
+    &:hover > &__check
+    {
+        transform:scale(1);
+        text-align: center;
+        width: 40px;
+        padding-top: 22px;
+        background-color: #99E2D0;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        .fa-check{
+            transform:rotate(-360deg);
+            background-color: white;
+            padding: 5px;
+            border-radius: 12px;
+            color: lighten($cl-tertiare, 50%);
+        }
+    }
+
 }
