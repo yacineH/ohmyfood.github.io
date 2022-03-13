@@ -35,7 +35,7 @@
     font-size: 0.9em;
   }
   .header__reservation {
-    background-color: #f3f3f3;
+    background-color: white;
     padding-bottom: 40px;
     padding-top: 55px;
   }
@@ -55,20 +55,42 @@
     color: gray;
     margin-bottom: 30px;
   }
-  .header__reservation a {
-    width: 190px;
-    display: block;
+  .header__reservation__btn {
+    width: 250px;
     margin: auto;
     text-decoration: none;
     text-align: center;
     color: white;
-    background-color: #9356DC;
+    background: radial-gradient(farthest-corner at 200px 80px, #9356DC, #f779d3);
     border-radius: 35px;
     padding: 20px;
     margin-top: 40px;
     margin-bottom: 30px;
     font-size: 1em;
     font-weight: bold;
+    box-shadow: 2px 3px 10px silver;
+    position: relative;
+    z-index: 1;
+  }
+  .header__reservation__btn:hover {
+    box-shadow: 2px 3px 10px #737373;
+  }
+  .header__reservation__btn:hover::after {
+    border-radius: 35px;
+    opacity: 1;
+  }
+  .header__reservation__btn::after {
+    border-radius: 35px;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(farthest-corner at 200px 80px, #a16be0, #f891db);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
   }
 
   .header-pages {
@@ -165,7 +187,7 @@
     width: 85%;
     border-radius: 20px;
     box-shadow: 2px 3px 10px #d9d9d9;
-    background-color: #f2eafb;
+    background-color: #fdd9f3;
     margin-bottom: 20px;
   }
   .fonctionnement__etape--modifier__lg {
@@ -431,11 +453,13 @@
   }
   .main-pages__entrees__recette {
     display: flex;
+    align-items: stretch;
     width: 95%;
     height: 68px;
     box-shadow: 2px 3px 10px #d9d9d9;
     border-radius: 15px;
     margin-bottom: 20px;
+    cursor: pointer;
   }
   .main-pages__entrees__recette__desc {
     width: 80%;
@@ -456,21 +480,24 @@
     padding-left: 5px;
   }
   .main-pages__entrees__recette__prix {
-    padding: 0px;
-    margin: 0px;
+    width: 10%;
     padding-top: 20px;
-    padding-right: 15px;
     font-weight: bold;
   }
   .main-pages__entrees__recette__check {
+    width: 10%;
+    display: none;
+  }
+  .main-pages__entrees__recette:hover > .main-pages__entrees__recette__check {
+    display: block;
     text-align: center;
-    width: 50px;
+    width: 40px;
     padding-top: 22px;
     background-color: #99E2D0;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
   }
-  .main-pages__entrees__recette__check .fa-check {
+  .main-pages__entrees__recette:hover > .main-pages__entrees__recette__check .fa-check {
     background-color: white;
     padding: 5px;
     border-radius: 12px;
@@ -490,11 +517,13 @@
   }
   .main-pages__plats__recette {
     display: flex;
+    align-items: stretch;
     width: 95%;
     height: 68px;
     box-shadow: 2px 3px 10px #d9d9d9;
     border-radius: 15px;
     margin-bottom: 20px;
+    cursor: pointer;
   }
   .main-pages__plats__recette__desc {
     width: 80%;
@@ -515,21 +544,24 @@
     padding-left: 5px;
   }
   .main-pages__plats__recette__prix {
-    padding: 0px;
-    margin: 0px;
+    width: 10%;
     padding-top: 20px;
-    padding-right: 15px;
     font-weight: bold;
   }
   .main-pages__plats__recette__check {
+    width: 10%;
+    display: none;
+  }
+  .main-pages__plats__recette:hover > .main-pages__plats__recette__check {
+    display: block;
     text-align: center;
-    width: 50px;
+    width: 40px;
     padding-top: 22px;
     background-color: #99E2D0;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
   }
-  .main-pages__plats__recette__check .fa-check {
+  .main-pages__plats__recette:hover > .main-pages__plats__recette__check .fa-check {
     background-color: white;
     padding: 5px;
     border-radius: 12px;
@@ -549,11 +581,13 @@
   }
   .main-pages__dessert__recette {
     display: flex;
+    align-items: stretch;
     width: 95%;
     height: 68px;
     box-shadow: 2px 3px 10px #d9d9d9;
     border-radius: 15px;
     margin-bottom: 20px;
+    cursor: pointer;
   }
   .main-pages__dessert__recette__desc {
     width: 80%;
@@ -574,38 +608,65 @@
     padding-left: 5px;
   }
   .main-pages__dessert__recette__prix {
-    padding: 0px;
-    margin: 0px;
+    width: 10%;
     padding-top: 20px;
-    padding-right: 15px;
     font-weight: bold;
   }
   .main-pages__dessert__recette__check {
+    width: 10%;
+    display: none;
+  }
+  .main-pages__dessert__recette:hover > .main-pages__dessert__recette__check {
+    display: block;
     text-align: center;
-    width: 50px;
+    width: 40px;
     padding-top: 22px;
     background-color: #99E2D0;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
   }
-  .main-pages__dessert__recette__check .fa-check {
+  .main-pages__dessert__recette:hover > .main-pages__dessert__recette__check .fa-check {
     background-color: white;
     padding: 5px;
     border-radius: 12px;
     color: #a1f9e3;
   }
   .main-pages__btn {
-    margin: auto;
-    margin-top: 40px;
     width: 180px;
-    height: 20px;
-    padding: 20px;
-    border-radius: 45px;
+    margin: auto;
+    text-decoration: none;
     text-align: center;
     color: white;
-    font-size: 1.1em;
+    background: radial-gradient(farthest-corner at 200px 80px, #9356DC, #f779d3);
+    border-radius: 35px;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 1em;
     font-weight: bold;
-    background-color: #9356DC;
+    box-shadow: 2px 3px 10px silver;
+    position: relative;
+    z-index: 1;
+  }
+  .main-pages__btn:hover {
+    box-shadow: 2px 3px 10px #737373;
+  }
+  .main-pages__btn:hover::after {
+    border-radius: 35px;
+    opacity: 1;
+  }
+  .main-pages__btn::after {
+    border-radius: 35px;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(farthest-corner at 200px 80px, #a16be0, #f891db);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
   }
 
   .footer {

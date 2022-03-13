@@ -152,6 +152,7 @@
                 margin-right: 35px;
                 padding-top: 15px;
                 font-size: 1.6em;
+                
 
                 .fa-heart{
                     color:darken($cl-gris,30%);
@@ -162,6 +163,49 @@
             }
         }
     }
+}
+
+
+@mixin btn($width:180px,$padding:20px)
+{
+    width: $width;
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+    color:white;
+    background: radial-gradient(farthest-corner at 200px 80px  ,$cl-primaire,$cl-secondaire);
+    border-radius: 35px;
+    padding: $padding;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 1.0em;
+    font-weight: bold;
+    box-shadow:2px 3px 10px darken($cl-gris,10%);
+
+    position: relative;
+    z-index: 1;
+
+   &:hover {
+      box-shadow:2px 3px 10px darken($cl-gris,40%);
+        &::after {
+            border-radius: 35px;
+            opacity: 1;
+        }
+      }
+
+    &::after { 
+      border-radius: 35px;
+      content: "";           
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: radial-gradient(farthest-corner at 200px 80px  ,lighten($cl-primaire,5),lighten($cl-secondaire,5));
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 250ms;
+  }
 }
 
 @mixin card-new{
