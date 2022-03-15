@@ -1,0 +1,21 @@
+@keyframes Menu{
+    0% {
+        transform: scaleY(0);
+      }
+      17% {
+          transform: scaleY(.2);
+      }
+      24% {
+          transform: scaleY(.4);
+      }
+      46% {      
+          transform: scaleY(.6);
+      }
+      85% {
+        transform: scaleY(.8);
+      }
+      100% {      
+          transform: scaleY(1);
+      }
+
+}

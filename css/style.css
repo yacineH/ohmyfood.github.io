@@ -6,6 +6,26 @@
     font-family: sans-serif;
   }
 
+  @keyframes Menu {
+    0% {
+      transform: scaleY(0);
+    }
+    17% {
+      transform: scaleY(0.2);
+    }
+    24% {
+      transform: scaleY(0.4);
+    }
+    46% {
+      transform: scaleY(0.6);
+    }
+    85% {
+      transform: scaleY(0.8);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
   .header__logo {
     margin: auto;
     padding-top: 30px;
@@ -440,8 +460,9 @@
     font-weight: 100;
   }
   .main-pages__entrees {
-    transform: scale(1);
-    transition: transform 1000ms ease-in 500ms;
+    transform: scaleX(1);
+    animation: Menu 1000ms 1000ms both;
+    transform-origin: center top;
   }
   .main-pages__entrees__heading {
     margin: 0px;
@@ -524,12 +545,10 @@
     border-radius: 12px;
     color: #a1f9e3;
   }
-  .main-pages__entrees:hover {
-    transform: scale(0.5);
-  }
   .main-pages__plats {
-    transform: scale(1);
-    transition: transform 1000ms ease-in 500ms;
+    transform: scaleX(1);
+    animation: Menu 1000ms 1000ms both;
+    transform-origin: center top;
   }
   .main-pages__plats__heading {
     margin: 0px;
@@ -612,12 +631,10 @@
     border-radius: 12px;
     color: #a1f9e3;
   }
-  .main-pages__plats:hover {
-    transform: scale(0.5);
-  }
   .main-pages__dessert {
-    transform: scale(1);
-    transition: transform 1000ms ease-in 500ms;
+    transform: scaleX(1);
+    animation: Menu 1000ms 1000ms both;
+    transform-origin: center top;
   }
   .main-pages__dessert__heading {
     margin: 0px;
@@ -699,9 +716,6 @@
     padding: 5px;
     border-radius: 12px;
     color: #a1f9e3;
-  }
-  .main-pages__dessert:hover {
-    transform: scale(0.5);
   }
   .main-pages__btn {
     width: 180px;

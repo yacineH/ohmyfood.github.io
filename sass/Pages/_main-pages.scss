@@ -69,14 +69,9 @@
                 }
                 @include check;
             }
-
-            transform:scale(1);
-            transition:transform 1000ms ease-in 500ms;
-            
-            &:hover{
-                transform:scale(.5);
-            }
-
+            transform: scaleX(1);
+            animation: Menu 1000ms (1000ms) both;
+            transform-origin: center top;
         } 
     }
 
