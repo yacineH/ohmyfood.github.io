@@ -4,14 +4,14 @@
     &__logo
     {
         margin: auto;
-        padding-top: 30px;
-        padding-bottom: 20px;
-        height: 35px;
-        width: 200px;
+        padding-top: 1.9rem;
+        padding-bottom: 1.2rem;
+        height: 2rem;
+        width: 12.5rem;
         img
         {
-            height: 35px;
-            width: 200px;
+            height: 100%;
+            width: 100%;
         }
     }
     &__localisation
@@ -19,49 +19,49 @@
         border-top: 3px solid  darken($cl-gris,1%);
         background-color: lighten($cl-gris,8%);
         color: darken($cl-gris,60%);
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
 
         p{
             margin: auto;
-            width: 200px;
-            padding-left: 8px;
-            font-size: 1.1em;
+            width: 12.5rem;
+            padding-left: .5rem;
+            font-size: 1.1rem;
         }
 
         i
         {
-           padding-right: 10px;
-           font-size: .9em;  
+           padding-right: .8rem;
+           font-size: .9rem;  
         } 
     }
     &__reservation
     {
         background-color: lighten($cl-gris,25%);
-        padding-bottom: 40px;
-        padding-top: 55px;
+        padding-bottom: 2.5rem;
+        padding-top: 3.4rem;
         h3
         {
             margin:auto;
             text-align: center;
-            width: 270px;
-            font-size:1.5em;
+            width: 16.8rem;
+            font-size:1.5rem;
             font-weight: 700;
-            margin-bottom: 15px;
+            margin-bottom: 2rem;
         }
         p
         {
-            width: 280px;
+            width: 17.5rem;
             margin:auto;
             text-align: center; 
-            font-size: 1.0em; 
+            font-size: 1.0rem; 
             color:darken($cl-gris,35%);
-            margin-bottom: 30px;
+            margin-bottom: 2rem;
             
         }
         &__btn
         {
-          @include btn(250px);
+          @include btn(15.6rem);
         }
 
     }

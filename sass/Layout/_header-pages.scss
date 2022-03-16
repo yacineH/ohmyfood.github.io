@@ -7,32 +7,32 @@
     &__logo
     {
         display: flex;
-        padding-top: 15px;
-        padding-bottom: 10px;
+        padding-top: 2rem;
+        padding-bottom: .9rem;
         justify-content:left;
-        margin-left: 30px;
+        margin-left: 2rem;
         
         &__fleche
         {
             display: block;
             color:darken($cl-gris,50%);
-            padding-top: 8px;
+            padding-top: .5rem;
 
             .fa-arrow-left{
-                font-size: 1.4em;
+                font-size: 1.4rem;
                 font-weight: bold;
             }
         }
         &__lgo
         {
 
-            width: 300px;
+            width: 18.75rem;
             text-align: center;
             
             img
             {                
-                height: 35px;
-                width: 170px; 
+                height: 2rem;
+                width: 10.6rem; 
             }
         }
     }
@@ -42,8 +42,8 @@
         overflow: hidden;
         img
         {
-            width: 420px;
-            height: 305px; 
+            width: 26.2rem;
+            height: 19rem; 
             object-fit: cover; 
         }
     }

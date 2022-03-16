@@ -1,34 +1,34 @@
 .footer
 {
     width: 100%;
-    margin-top: 8px;
+    margin-top: .5rem;
     color:white;
-    padding-left: 22px;
-    padding-top: 12px;
-    height: 230px;
+    padding-left: 1.6rem;
+    padding-top: 1.2rem;
+    height: 14.3rem;
     background-color:darken($cl-gris,60%);
 
     .fa-utensils
     {
-        padding-right: 5px; 
+        padding-right: .4rem; 
     }
 
     &__heading
     {
         @include font-family;
-        font-size: 1.4em;
+        font-size: 1.4rem;
     }
     &__options
     {
         margin: 0px;
-        margin-bottom: 12px;
-        font-size: 1.0em;
+        margin-bottom: .8rem;
+        font-size: 1.0rem;
         font-weight: bold;
         
         span
         {
-            margin-left: 10px;
-            font-size: 1.1em;           
+            margin-left: .6rem;
+            font-size: 1.1rem;           
         }
     }
 }
