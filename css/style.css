@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
+  border: 1px solid red;
   margin: auto;
-  width: 25.75rem;
+  width: 25rem;
   background-color: white;
   font-family: sans-serif;
 }
@@ -756,7 +757,6 @@ body {
 }
 
 .footer {
-  width: 100%;
   margin-top: 0.5rem;
   color: white;
   padding-left: 1.6rem;
