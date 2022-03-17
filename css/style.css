@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
-  border: 1px solid red;
   margin: auto;
   width: 25rem;
   background-color: white;
@@ -548,7 +547,7 @@ body {
 }
 .main-pages__plats {
   transform: scaleX(1);
-  animation: Menu 1000ms 1000ms both;
+  animation: Menu 1000ms 2000ms both;
   transform-origin: center top;
 }
 .main-pages__plats__heading {
@@ -634,7 +633,7 @@ body {
 }
 .main-pages__dessert {
   transform: scaleX(1);
-  animation: Menu 1000ms 1000ms both;
+  animation: Menu 1000ms 3000ms both;
   transform-origin: center top;
 }
 .main-pages__dessert__heading {

@@ -1,4 +1,3 @@
-
 .main-pages
 {
     background-color: white;
@@ -15,8 +14,8 @@
         @include title-restaurant;
     }
 
-    @each $division in $divisions {
-        &__#{$division}{
+    @each $division in $menus {
+        &__#{nth($division,1)}{
             &__heading{
                 margin: 0px;
                 font-size: 1.0rem;
@@ -70,11 +69,10 @@
                 @include check;
             }
             transform: scaleX(1);
-            animation: Menu 1000ms (1000ms) both;
+            animation: Menu 1000ms #{nth($division,2)} both;
             transform-origin: center top;
         } 
     }
-
 
     &__btn{
         @include btn(11.2rem);
