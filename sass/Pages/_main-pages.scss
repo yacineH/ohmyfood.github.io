@@ -14,8 +14,8 @@
         @include title-restaurant;
     }
 
-    @each $division in $menus {
-        &__#{nth($division,1)}{
+    @each $menu in $menus {
+        &__#{nth($menu,1)}{
             &__heading{
                 margin: 0px;
                 font-size: 1.0rem;
@@ -69,7 +69,7 @@
                 @include check;
             }
             transform: scaleX(1);
-            animation: Menu 1000ms #{nth($division,2)} both;
+            animation: Menu 1000ms #{nth($menu,2)} both;
             transform-origin: center top;
         } 
     }
