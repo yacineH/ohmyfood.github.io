@@ -6,26 +6,60 @@ body {
   font-family: sans-serif;
 }
 
-@keyframes Menu {
+@-webkit-keyframes Menu {
   0% {
-    transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
   }
   17% {
-    transform: scaleY(0.2);
+    -webkit-transform: scaleY(0.2);
+            transform: scaleY(0.2);
   }
   24% {
-    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
   }
   46% {
-    transform: scaleY(0.6);
+    -webkit-transform: scaleY(0.6);
+            transform: scaleY(0.6);
   }
   85% {
-    transform: scaleY(0.8);
+    -webkit-transform: scaleY(0.8);
+            transform: scaleY(0.8);
   }
   100% {
-    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
   }
 }
+
+@keyframes Menu {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  17% {
+    -webkit-transform: scaleY(0.2);
+            transform: scaleY(0.2);
+  }
+  24% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+  }
+  46% {
+    -webkit-transform: scaleY(0.6);
+            transform: scaleY(0.6);
+  }
+  85% {
+    -webkit-transform: scaleY(0.8);
+            transform: scaleY(0.8);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
 .header__logo {
   margin: auto;
   padding-top: 1.9rem;
@@ -33,10 +67,12 @@ body {
   height: 2rem;
   width: 12.5rem;
 }
+
 .header__logo img {
   height: 100%;
   width: 100%;
 }
+
 .header__localisation {
   border-top: 3px solid #d6d6d6;
   background-color: #ededed;
@@ -44,21 +80,25 @@ body {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
 .header__localisation p {
   margin: auto;
   width: 12.5rem;
-  padding-left: 0.5rem;
+  padding-left: .5rem;
   font-size: 1.1rem;
 }
+
 .header__localisation i {
-  padding-right: 0.8rem;
-  font-size: 0.9rem;
+  padding-right: .8rem;
+  font-size: .9rem;
 }
+
 .header__reservation {
   background-color: white;
   padding-bottom: 2.5rem;
   padding-top: 3.4rem;
 }
+
 .header__reservation h3 {
   margin: auto;
   text-align: center;
@@ -67,14 +107,16 @@ body {
   font-weight: 700;
   margin-bottom: 2rem;
 }
+
 .header__reservation p {
   width: 17.5rem;
   margin: auto;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.0rem;
   color: gray;
   margin-bottom: 2rem;
 }
+
 .header__reservation__btn {
   width: 15.6rem;
   margin: auto;
@@ -86,19 +128,24 @@ body {
   padding: 1.2rem;
   margin-top: 2.5rem;
   margin-bottom: 1.8rem;
-  font-size: 1rem;
+  font-size: 1.0rem;
   font-weight: bold;
-  box-shadow: 2px 3px 10px silver;
+  -webkit-box-shadow: 2px 3px 10px silver;
+          box-shadow: 2px 3px 10px silver;
   position: relative;
   z-index: 1;
 }
+
 .header__reservation__btn:hover {
-  box-shadow: 0.1rem 0.18rem 0.6rem #737373;
+  -webkit-box-shadow: 0.1rem 0.18rem 0.6rem #737373;
+          box-shadow: 0.1rem 0.18rem 0.6rem #737373;
 }
+
 .header__reservation__btn:hover::after {
   border-radius: 2.1rem;
   opacity: 1;
 }
+
 .header__reservation__btn::after {
   border-radius: 2.1rem;
   content: "";
@@ -110,157 +157,206 @@ body {
   background: radial-gradient(farthest-corner at 12.5rem 5rem, #a16be0, #f891db);
   opacity: 0;
   z-index: -1;
+  -webkit-transition: opacity 250ms;
   transition: opacity 250ms;
 }
 
 .header-pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
 }
+
 .header-pages__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 2rem;
-  padding-bottom: 0.9rem;
-  justify-content: left;
+  padding-bottom: .9rem;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   margin-left: 2rem;
 }
+
 .header-pages__logo__fleche {
   display: block;
   color: #5a5a5a;
-  padding-top: 0.5rem;
+  padding-top: .5rem;
 }
+
 .header-pages__logo__fleche .fa-arrow-left {
   font-size: 1.4rem;
   font-weight: bold;
 }
+
 .header-pages__logo__lgo {
   width: 18.75rem;
   text-align: center;
 }
+
 .header-pages__logo__lgo img {
   height: 2rem;
   width: 10.6rem;
 }
+
 .header-pages__image {
   overflow: hidden;
 }
+
 .header-pages__image img {
   width: 26.2rem;
   height: 19rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .fonctionnement {
   margin: auto;
 }
+
 .fonctionnement__heading {
   font-size: 1.4rem;
   font-weight: bold;
   margin-left: 1.25rem;
   margin-top: 3.1rem;
 }
+
 .fonctionnement__etape {
   margin-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 4.3rem;
   width: 85%;
   border-radius: 1.25rem;
-  box-shadow: 2px 3px 10px #d9d9d9;
+  -webkit-box-shadow: 2px 3px 10px #d9d9d9;
+          box-shadow: 2px 3px 10px #d9d9d9;
   background-color: white;
   margin-bottom: 1.25rem;
 }
+
 .fonctionnement__etape__lg {
   text-align: center;
   width: 2.5rem;
-  font-size: 1rem;
+  font-size: 1.0rem;
   color: #8d8d8d;
 }
+
 .fonctionnement__etape__hd {
-  padding-left: 0.6rem;
+  padding-left: .6rem;
   width: 12.5rem;
 }
+
 .fonctionnement__etape__hd p {
   padding: 0px;
   margin: 0px;
-  font-size: 0.9rem;
+  font-size: .9rem;
   font-weight: 700;
 }
+
 .fonctionnement__etape .fa-1, .fonctionnement__etape .fa-2, .fonctionnement__etape .fa-3 {
   position: relative;
-  left: -0.5rem;
+  left: -.5rem;
   background-color: #9356DC;
   color: white;
-  font-size: 0.6rem;
-  padding: 0.5rem;
-  height: 0.45rem;
+  font-size: .6rem;
+  padding: .5rem;
+  height: .45rem;
   border-radius: 1.25rem;
 }
+
 .fonctionnement__etape--modifier {
   margin-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 4.3rem;
   width: 85%;
   border-radius: 1.25rem;
-  box-shadow: 2px 3px 10px #d9d9d9;
+  -webkit-box-shadow: 2px 3px 10px #d9d9d9;
+          box-shadow: 2px 3px 10px #d9d9d9;
   background-color: #fdd9f3;
   margin-bottom: 1.25rem;
 }
+
 .fonctionnement__etape--modifier__lg {
   text-align: center;
   width: 2.5rem;
-  font-size: 1rem;
+  font-size: 1.0rem;
   color: #9356DC;
 }
+
 .fonctionnement__etape--modifier__hd {
-  padding-left: 0.6rem;
+  padding-left: .6rem;
   width: 12.5rem;
 }
+
 .fonctionnement__etape--modifier__hd p {
   padding: 0px;
   margin: 0px;
-  font-size: 0.9rem;
+  font-size: .9rem;
   font-weight: 700;
 }
+
 .fonctionnement__etape--modifier .fa-1, .fonctionnement__etape--modifier .fa-2, .fonctionnement__etape--modifier .fa-3 {
   position: relative;
-  left: -0.5rem;
+  left: -.5rem;
   background-color: #9356DC;
   color: white;
-  font-size: 0.6rem;
-  padding: 0.5rem;
-  height: 0.45rem;
+  font-size: .6rem;
+  padding: .5rem;
+  height: .45rem;
   border-radius: 1.25rem;
 }
 
 .main {
   margin-top: 4.3rem;
   background-color: #f6f6f6;
-  padding: 0.4rem;
+  padding: .4rem;
 }
+
 .main__heading {
   font-size: 1.4rem;
   font-weight: bold;
   margin-left: 1.25rem;
   margin-top: 3.1rem;
 }
+
 .main__card {
   position: relative;
   cursor: pointer;
   text-decoration: none;
   color: black;
   display: block;
-  margin-top: 0.4rem;
+  margin-top: .4rem;
   padding-bottom: 1.8rem;
 }
+
 .main__card__content {
   margin-bottom: 1.5rem;
   position: relative;
-  box-shadow: 2px 3px 10px #d9d9d9;
+  -webkit-box-shadow: 2px 3px 10px #d9d9d9;
+          box-shadow: 2px 3px 10px #d9d9d9;
   background-color: white;
   width: 90%;
   height: 16.2rem;
@@ -268,44 +364,59 @@ body {
   margin-left: 1rem;
   cursor: pointer;
 }
+
 .main__card__content__image {
   height: 11.2rem;
   overflow: hidden;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
+
 .main__card__content__image .image1 {
   position: relative;
   top: -3.1rem;
   width: 100%;
   height: 14.3rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .main__card__content__image .image2 {
   position: relative;
   top: -4rem;
   width: 22.5rem;
   height: 15rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .main__card__content__image .image3 {
   position: relative;
   top: -3.75rem;
   width: 100%;
   height: 14.3rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .main__card__content__image .image4 {
   position: relative;
   top: -4rem;
   width: 100%;
   height: 15rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .main__card__content__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .main__card__content__description__heading h5 {
   margin: 0px;
   font-size: 1.1rem;
@@ -313,98 +424,44 @@ body {
   font-weight: bold;
   padding-left: 1rem;
 }
+
 .main__card__content__description__heading h6 {
   margin: 0px;
   padding-left: 1rem;
-  padding-top: 0.4rem;
-  font-size: 1rem;
+  padding-top: .4rem;
+  font-size: 1.0rem;
   font-weight: 500;
 }
+
 .main__card__content__description__icon {
   margin-right: 2.1rem;
   padding-top: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
-.main__card__content__description__icon .fa-regular {
-  color: #cccccc;
-  position: relative;
-  z-index: 1;
+
+.main__card__content__description__icon .fa-heart {
+  color: #8d8d8d;
 }
-.main__card__content__description__icon .fa-regular:hover {
+
+.main__card__content__description__icon .fa-heart:hover {
   color: #9356DC;
 }
-.main__card__content__description__icon .fa-regular:hover .fa-regular__bg1, .main__card__content__description__icon .fa-regular:hover .fa-regular__bg2, .main__card__content__description__icon .fa-regular:hover .fa-regular__bg3, .main__card__content__description__icon .fa-regular:hover .fa-regular__bg4 {
-  opacity: 1;
-}
-.main__card__content__description__icon .fa-regular__bg1 {
-  margin: 3px 0px 0px 2px;
-  position: absolute;
-  width: 0.5rem;
-  height: 0.75rem;
-  top: 0.07rem;
-  right: 0;
-  bottom: 0;
-  left: 0.05rem;
-  background-color: #9356DC;
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 250ms;
-}
-.main__card__content__description__icon .fa-regular__bg2 {
-  margin: 3px 0px 0px 2px;
-  position: absolute;
-  width: 0.5rem;
-  height: 0.5rem;
-  top: 0.75rem;
-  right: 0;
-  bottom: 0;
-  left: 0.5rem;
-  background-color: #9356DC;
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 250ms;
-}
-.main__card__content__description__icon .fa-regular__bg3 {
-  margin: 3px 0px 0px 2px;
-  position: absolute;
-  width: 0.98rem;
-  height: 0.75rem;
-  top: 0.07rem;
-  right: 0;
-  bottom: 0;
-  left: 0.5rem;
-  background-color: #9356DC;
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 250ms;
-}
-.main__card__content__description__icon .fa-regular__bg4 {
-  margin: 3px 0px 0px 2px;
-  position: absolute;
-  width: 0.85rem;
-  height: 0.7rem;
-  top: 0.3rem;
-  right: 0;
-  bottom: 0;
-  left: 0.3rem;
-  background-color: #9356DC;
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 250ms;
-}
+
 .main__card--modifier {
   position: relative;
   cursor: pointer;
   text-decoration: none;
   color: black;
   display: block;
-  margin-top: 0.4rem;
+  margin-top: .4rem;
   padding-bottom: 1.8rem;
 }
+
 .main__card--modifier__content {
   margin-bottom: 1.5rem;
   position: relative;
-  box-shadow: 2px 3px 10px #d9d9d9;
+  -webkit-box-shadow: 2px 3px 10px #d9d9d9;
+          box-shadow: 2px 3px 10px #d9d9d9;
   background-color: white;
   width: 90%;
   height: 16.2rem;
@@ -412,44 +469,59 @@ body {
   margin-left: 1rem;
   cursor: pointer;
 }
+
 .main__card--modifier__content__image {
   height: 11.2rem;
   overflow: hidden;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
+
 .main__card--modifier__content__image .image1 {
   position: relative;
   top: -3.1rem;
   width: 100%;
   height: 14.3rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .main__card--modifier__content__image .image2 {
   position: relative;
   top: -4rem;
   width: 22.5rem;
   height: 15rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .main__card--modifier__content__image .image3 {
   position: relative;
   top: -3.75rem;
   width: 100%;
   height: 14.3rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .main__card--modifier__content__image .image4 {
   position: relative;
   top: -4rem;
   width: 100%;
   height: 15rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .main__card--modifier__content__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .main__card--modifier__content__description__heading h5 {
   margin: 0px;
   font-size: 1.1rem;
@@ -457,89 +529,33 @@ body {
   font-weight: bold;
   padding-left: 1rem;
 }
+
 .main__card--modifier__content__description__heading h6 {
   margin: 0px;
   padding-left: 1rem;
-  padding-top: 0.4rem;
-  font-size: 1rem;
+  padding-top: .4rem;
+  font-size: 1.0rem;
   font-weight: 500;
 }
+
 .main__card--modifier__content__description__icon {
   margin-right: 2.1rem;
   padding-top: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
-.main__card--modifier__content__description__icon .fa-regular {
-  color: #cccccc;
-  position: relative;
-  z-index: 1;
+
+.main__card--modifier__content__description__icon .fa-heart {
+  color: #8d8d8d;
 }
-.main__card--modifier__content__description__icon .fa-regular:hover {
+
+.main__card--modifier__content__description__icon .fa-heart:hover {
   color: #9356DC;
 }
-.main__card--modifier__content__description__icon .fa-regular:hover .fa-regular__bg1, .main__card--modifier__content__description__icon .fa-regular:hover .fa-regular__bg2, .main__card--modifier__content__description__icon .fa-regular:hover .fa-regular__bg3, .main__card--modifier__content__description__icon .fa-regular:hover .fa-regular__bg4 {
-  opacity: 1;
-}
-.main__card--modifier__content__description__icon .fa-regular__bg1 {
-  margin: 3px 0px 0px 2px;
-  position: absolute;
-  width: 0.5rem;
-  height: 0.75rem;
-  top: 0.07rem;
-  right: 0;
-  bottom: 0;
-  left: 0.05rem;
-  background-color: #9356DC;
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 250ms;
-}
-.main__card--modifier__content__description__icon .fa-regular__bg2 {
-  margin: 3px 0px 0px 2px;
-  position: absolute;
-  width: 0.5rem;
-  height: 0.5rem;
-  top: 0.75rem;
-  right: 0;
-  bottom: 0;
-  left: 0.5rem;
-  background-color: #9356DC;
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 250ms;
-}
-.main__card--modifier__content__description__icon .fa-regular__bg3 {
-  margin: 3px 0px 0px 2px;
-  position: absolute;
-  width: 0.98rem;
-  height: 0.75rem;
-  top: 0.07rem;
-  right: 0;
-  bottom: 0;
-  left: 0.5rem;
-  background-color: #9356DC;
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 250ms;
-}
-.main__card--modifier__content__description__icon .fa-regular__bg4 {
-  margin: 3px 0px 0px 2px;
-  position: absolute;
-  width: 0.85rem;
-  height: 0.7rem;
-  top: 0.3rem;
-  right: 0;
-  bottom: 0;
-  left: 0.3rem;
-  background-color: #9356DC;
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 250ms;
-}
+
 .main__card--modifier__new {
   text-align: center;
   position: absolute;
-  top: 0.8rem;
+  top: .8rem;
   right: 2.8rem;
   z-index: 1;
   width: 5rem;
@@ -547,9 +563,9 @@ body {
   background-color: #a1f9e3;
   color: #0a916f;
   font-weight: bolder;
-  font-size: 0.8rem;
-  padding-top: 0.35rem;
-  border-radius: 0.12rem;
+  font-size: .8rem;
+  padding-top: .35rem;
+  border-radius: .12rem;
 }
 
 .main-pages {
@@ -562,97 +578,132 @@ body {
   width: 98%;
   padding-left: 1rem;
 }
+
 .main-pages__restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .main-pages__restaurant__icon {
   margin-right: 3.1rem;
   padding-top: 1.9rem;
 }
+
 .main-pages__restaurant__icon .fa-heart {
   color: #737373;
   font-size: 1.6rem;
   font-weight: lighter;
 }
+
 .main-pages__restaurant p {
-  font-family: "Shrikhand", cursive;
+  font-family: 'Shrikhand', cursive;
   margin-right: 1rem;
   font-size: 1.8rem;
   font-weight: 100;
 }
+
 .main-pages__entrees {
-  transform: scaleX(1);
-  animation: Menu 1000ms 1000ms both;
-  transform-origin: center top;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-animation: Menu 1000ms 1000ms both;
+          animation: Menu 1000ms 1000ms both;
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
 }
+
 .main-pages__entrees__heading {
   margin: 0px;
-  font-size: 1rem;
+  font-size: 1.0rem;
   color: #5a5a5a;
 }
+
 .main-pages__entrees hr {
   margin: 0px;
   width: 2rem;
   border: 1px solid #a1f9e3;
-  margin-top: 0.35rem;
+  margin-top: .35rem;
   margin-bottom: 1rem;
 }
+
 .main-pages__entrees__recette {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   width: 95%;
   height: 4.1rem;
-  box-shadow: 2px 3px 10px #d9d9d9;
+  -webkit-box-shadow: 2px 3px 10px #d9d9d9;
+          box-shadow: 2px 3px 10px #d9d9d9;
   border-radius: 1rem;
   margin-bottom: 1.2rem;
   cursor: pointer;
 }
+
 .main-pages__entrees__recette__desc {
   width: 80%;
 }
+
 .main-pages__entrees__recette__desc p:nth-child(1) {
   padding: 0px;
   margin: 0px;
-  padding-top: 0.8rem;
-  padding-left: 0.3rem;
-  font-size: 1rem;
+  padding-top: .8rem;
+  padding-left: .3rem;
+  font-size: 1.0rem;
   font-weight: bold;
 }
+
 .main-pages__entrees__recette__desc p:nth-child(2) {
   padding: 0px;
   margin: 0px;
-  font-size: 0.7rem;
-  padding-top: 0.5rem;
-  padding-left: 0.3rem;
+  font-size: .7rem;
+  padding-top: .5rem;
+  padding-left: .3rem;
 }
+
 .main-pages__entrees__recette__prix {
   width: 10%;
   padding-top: 1.2rem;
   font-weight: bold;
 }
+
 .main-pages__entrees__recette__check {
   width: 10%;
-  transform: scale(0);
+  -webkit-transform: scale(0);
+          transform: scale(0);
   text-align: center;
   width: 2.5rem;
   padding-top: 1.3rem;
   background-color: #99E2D0;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  -webkit-transition: all 450ms;
   transition: all 450ms;
-  transform-origin: right;
+  -webkit-transform-origin: right;
+          transform-origin: right;
 }
+
 .main-pages__entrees__recette__check .fa-check {
-  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 450ms;
+  transition: -webkit-transform 450ms;
   transition: transform 450ms;
+  transition: transform 450ms, -webkit-transform 450ms;
   background-color: white;
-  padding: 0.35rem;
-  border-radius: 0.8rem;
+  padding: .35rem;
+  border-radius: .8rem;
   color: #a1f9e3;
 }
+
 .main-pages__entrees__recette:hover > .main-pages__entrees__recette__check {
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
   text-align: center;
   width: 2.5rem;
   padding-top: 1.3rem;
@@ -660,85 +711,114 @@ body {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
+
 .main-pages__entrees__recette:hover > .main-pages__entrees__recette__check .fa-check {
-  transform: rotate(-360deg);
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
   background-color: white;
-  padding: 0.35rem;
-  border-radius: 0.8rem;
+  padding: .35rem;
+  border-radius: .8rem;
   color: #a1f9e3;
 }
+
 .main-pages__plats {
-  transform: scaleX(1);
-  animation: Menu 1000ms 2000ms both;
-  transform-origin: center top;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-animation: Menu 1000ms 2000ms both;
+          animation: Menu 1000ms 2000ms both;
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
 }
+
 .main-pages__plats__heading {
   margin: 0px;
-  font-size: 1rem;
+  font-size: 1.0rem;
   color: #5a5a5a;
 }
+
 .main-pages__plats hr {
   margin: 0px;
   width: 2rem;
   border: 1px solid #a1f9e3;
-  margin-top: 0.35rem;
+  margin-top: .35rem;
   margin-bottom: 1rem;
 }
+
 .main-pages__plats__recette {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   width: 95%;
   height: 4.1rem;
-  box-shadow: 2px 3px 10px #d9d9d9;
+  -webkit-box-shadow: 2px 3px 10px #d9d9d9;
+          box-shadow: 2px 3px 10px #d9d9d9;
   border-radius: 1rem;
   margin-bottom: 1.2rem;
   cursor: pointer;
 }
+
 .main-pages__plats__recette__desc {
   width: 80%;
 }
+
 .main-pages__plats__recette__desc p:nth-child(1) {
   padding: 0px;
   margin: 0px;
-  padding-top: 0.8rem;
-  padding-left: 0.3rem;
-  font-size: 1rem;
+  padding-top: .8rem;
+  padding-left: .3rem;
+  font-size: 1.0rem;
   font-weight: bold;
 }
+
 .main-pages__plats__recette__desc p:nth-child(2) {
   padding: 0px;
   margin: 0px;
-  font-size: 0.7rem;
-  padding-top: 0.5rem;
-  padding-left: 0.3rem;
+  font-size: .7rem;
+  padding-top: .5rem;
+  padding-left: .3rem;
 }
+
 .main-pages__plats__recette__prix {
   width: 10%;
   padding-top: 1.2rem;
   font-weight: bold;
 }
+
 .main-pages__plats__recette__check {
   width: 10%;
-  transform: scale(0);
+  -webkit-transform: scale(0);
+          transform: scale(0);
   text-align: center;
   width: 2.5rem;
   padding-top: 1.3rem;
   background-color: #99E2D0;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  -webkit-transition: all 450ms;
   transition: all 450ms;
-  transform-origin: right;
+  -webkit-transform-origin: right;
+          transform-origin: right;
 }
+
 .main-pages__plats__recette__check .fa-check {
-  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 450ms;
+  transition: -webkit-transform 450ms;
   transition: transform 450ms;
+  transition: transform 450ms, -webkit-transform 450ms;
   background-color: white;
-  padding: 0.35rem;
-  border-radius: 0.8rem;
+  padding: .35rem;
+  border-radius: .8rem;
   color: #a1f9e3;
 }
+
 .main-pages__plats__recette:hover > .main-pages__plats__recette__check {
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
   text-align: center;
   width: 2.5rem;
   padding-top: 1.3rem;
@@ -746,85 +826,114 @@ body {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
+
 .main-pages__plats__recette:hover > .main-pages__plats__recette__check .fa-check {
-  transform: rotate(-360deg);
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
   background-color: white;
-  padding: 0.35rem;
-  border-radius: 0.8rem;
+  padding: .35rem;
+  border-radius: .8rem;
   color: #a1f9e3;
 }
+
 .main-pages__dessert {
-  transform: scaleX(1);
-  animation: Menu 1000ms 3000ms both;
-  transform-origin: center top;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-animation: Menu 1000ms 3000ms both;
+          animation: Menu 1000ms 3000ms both;
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
 }
+
 .main-pages__dessert__heading {
   margin: 0px;
-  font-size: 1rem;
+  font-size: 1.0rem;
   color: #5a5a5a;
 }
+
 .main-pages__dessert hr {
   margin: 0px;
   width: 2rem;
   border: 1px solid #a1f9e3;
-  margin-top: 0.35rem;
+  margin-top: .35rem;
   margin-bottom: 1rem;
 }
+
 .main-pages__dessert__recette {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   width: 95%;
   height: 4.1rem;
-  box-shadow: 2px 3px 10px #d9d9d9;
+  -webkit-box-shadow: 2px 3px 10px #d9d9d9;
+          box-shadow: 2px 3px 10px #d9d9d9;
   border-radius: 1rem;
   margin-bottom: 1.2rem;
   cursor: pointer;
 }
+
 .main-pages__dessert__recette__desc {
   width: 80%;
 }
+
 .main-pages__dessert__recette__desc p:nth-child(1) {
   padding: 0px;
   margin: 0px;
-  padding-top: 0.8rem;
-  padding-left: 0.3rem;
-  font-size: 1rem;
+  padding-top: .8rem;
+  padding-left: .3rem;
+  font-size: 1.0rem;
   font-weight: bold;
 }
+
 .main-pages__dessert__recette__desc p:nth-child(2) {
   padding: 0px;
   margin: 0px;
-  font-size: 0.7rem;
-  padding-top: 0.5rem;
-  padding-left: 0.3rem;
+  font-size: .7rem;
+  padding-top: .5rem;
+  padding-left: .3rem;
 }
+
 .main-pages__dessert__recette__prix {
   width: 10%;
   padding-top: 1.2rem;
   font-weight: bold;
 }
+
 .main-pages__dessert__recette__check {
   width: 10%;
-  transform: scale(0);
+  -webkit-transform: scale(0);
+          transform: scale(0);
   text-align: center;
   width: 2.5rem;
   padding-top: 1.3rem;
   background-color: #99E2D0;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  -webkit-transition: all 450ms;
   transition: all 450ms;
-  transform-origin: right;
+  -webkit-transform-origin: right;
+          transform-origin: right;
 }
+
 .main-pages__dessert__recette__check .fa-check {
-  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 450ms;
+  transition: -webkit-transform 450ms;
   transition: transform 450ms;
+  transition: transform 450ms, -webkit-transform 450ms;
   background-color: white;
-  padding: 0.35rem;
-  border-radius: 0.8rem;
+  padding: .35rem;
+  border-radius: .8rem;
   color: #a1f9e3;
 }
+
 .main-pages__dessert__recette:hover > .main-pages__dessert__recette__check {
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
   text-align: center;
   width: 2.5rem;
   padding-top: 1.3rem;
@@ -832,13 +941,16 @@ body {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
+
 .main-pages__dessert__recette:hover > .main-pages__dessert__recette__check .fa-check {
-  transform: rotate(-360deg);
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
   background-color: white;
-  padding: 0.35rem;
-  border-radius: 0.8rem;
+  padding: .35rem;
+  border-radius: .8rem;
   color: #a1f9e3;
 }
+
 .main-pages__btn {
   width: 11.2rem;
   margin: auto;
@@ -850,19 +962,24 @@ body {
   padding: 1.2rem;
   margin-top: 2.5rem;
   margin-bottom: 1.8rem;
-  font-size: 1rem;
+  font-size: 1.0rem;
   font-weight: bold;
-  box-shadow: 2px 3px 10px silver;
+  -webkit-box-shadow: 2px 3px 10px silver;
+          box-shadow: 2px 3px 10px silver;
   position: relative;
   z-index: 1;
 }
+
 .main-pages__btn:hover {
-  box-shadow: 0.1rem 0.18rem 0.6rem #737373;
+  -webkit-box-shadow: 0.1rem 0.18rem 0.6rem #737373;
+          box-shadow: 0.1rem 0.18rem 0.6rem #737373;
 }
+
 .main-pages__btn:hover::after {
   border-radius: 2.1rem;
   opacity: 1;
 }
+
 .main-pages__btn::after {
   border-radius: 2.1rem;
   content: "";
@@ -874,33 +991,37 @@ body {
   background: radial-gradient(farthest-corner at 12.5rem 5rem, #a16be0, #f891db);
   opacity: 0;
   z-index: -1;
+  -webkit-transition: opacity 250ms;
   transition: opacity 250ms;
 }
 
 .footer {
-  margin-top: 0.5rem;
+  margin-top: .5rem;
   color: white;
   padding-left: 1.6rem;
   padding-top: 1.2rem;
   height: 14.3rem;
   background-color: #404040;
 }
+
 .footer .fa-utensils {
-  padding-right: 0.4rem;
-}
-.footer__heading {
-  font-family: "Shrikhand", cursive;
-  font-size: 1.4rem;
-}
-.footer__options {
-  margin: 0px;
-  margin-bottom: 0.8rem;
-  font-size: 1rem;
-  font-weight: bold;
-}
-.footer__options span {
-  margin-left: 0.6rem;
-  font-size: 1.1rem;
+  padding-right: .4rem;
 }
 
+.footer__heading {
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.4rem;
+}
+
+.footer__options {
+  margin: 0px;
+  margin-bottom: .8rem;
+  font-size: 1.0rem;
+  font-weight: bold;
+}
+
+.footer__options span {
+  margin-left: .6rem;
+  font-size: 1.1rem;
+}
 /*# sourceMappingURL=style.css.map */
