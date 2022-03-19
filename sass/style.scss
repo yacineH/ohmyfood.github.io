@@ -1,22 +1,20 @@
+//font
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
- 
+//globales 
 @import "./Base/base";
-
 @import "./Utils/variables";
-
 @import "./Utils/mixins";
-
 @import "./Utils/keyframes";
-
-@import "./Layout/header";
-
-@import "./Layout/header-pages";
-
-@import "./Composants/fonctionnement";
-
-@import "./Composants/main";
-
-@import "./Pages/main-pages";
-
 @import "./Layout/footer";
+
+//index
+@import "./Layout/header";
+@import "./Composants/fonctionnement";
+@import "./Pages/principal-page";
+
+//pages
+@import "./Layout/header-pages";
+@import "./Pages/other-pages";
+
+

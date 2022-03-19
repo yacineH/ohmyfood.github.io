@@ -1,10 +1,10 @@
-.header-pages
+.header-pg
 {
     display: flex;
     flex-direction: column;
     width: 100%;
     
-    &__logo
+    div:nth-child(1)
     {
         display: flex;
         padding-top: 2rem;
@@ -12,7 +12,7 @@
         justify-content:left;
         margin-left: 2rem;
         
-        &__fleche
+        a
         {
             display: block;
             color:darken($cl-gris,50%);
@@ -23,21 +23,20 @@
                 font-weight: bold;
             }
         }
-        &__lgo
+        div
         {
-
             width: 18.75rem;
             text-align: center;
             
             img
             {                
                 height: 2rem;
-                width: 10.6rem; 
+                width: 12.6rem; 
             }
         }
     }
 
-    &__image
+    div:nth-child(2)
     {
         overflow: hidden;
         img

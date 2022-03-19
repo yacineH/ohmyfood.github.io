@@ -1,0 +1,52 @@
+
+//gestion de chargement de la page
+.chargement{
+    width:20rem;
+    position: absolute;
+    z-index: 0;
+    top: 22rem;
+}
+.progress-bar {
+    width:20rem;
+    position: absolute;
+    z-index: 0;
+    height: 28px;
+    opacity: 1;
+    border-radius: 15px;
+    background-color:$cl-primaire;
+    top: 25rem;
+    transform-origin: left;
+    transform: scaleX(0);
+    animation: progress-bar 2000ms 1000ms;
+}
+.content {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    animation:content-page 2000ms 2000ms both;
+}
+
+//composant main principal
+.main
+{
+    margin-top: 4.3rem;
+    background-color:#f6f6f6;
+    padding: .4rem;
+
+    &__heading
+    {
+       @include title;
+    }
+    &__card
+    {
+        @include card;
+        &--md{
+            @include card;
+            &__new
+            {
+              @include card-new;
+            }
+        }
+    }
+}
+
