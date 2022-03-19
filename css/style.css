@@ -82,9 +82,6 @@ body {
   font-size: 1.1rem;
 }
 
-.header {
-  border: 1px solid red;
-}
 .header__logo {
   margin: auto;
   padding-top: 1.9rem;
@@ -173,7 +170,6 @@ body {
 }
 
 .fonctionnement {
-  border: 1px solid red;
   margin: auto;
 }
 .fonctionnement__heading {
@@ -352,11 +348,16 @@ body {
   object-fit: cover;
 }
 .main__card__content div:nth-child(2) {
+  height: 5rem;
   display: flex;
   justify-content: space-between;
 }
+.main__card__content div:nth-child(2) div:nth-child(1) {
+  height: 5rem;
+}
 .main__card__content div:nth-child(2) div:nth-child(1) h3 {
   margin: 0px;
+  padding: 0px;
   font-size: 1.1rem;
   padding-top: 1rem;
   font-weight: bold;
@@ -364,15 +365,17 @@ body {
 }
 .main__card__content div:nth-child(2) div:nth-child(1) h4 {
   margin: 0px;
+  padding: 0px;
   padding-left: 1rem;
   padding-top: 0.4rem;
   font-size: 1rem;
   font-weight: 500;
 }
 .main__card__content div:nth-child(2) div:nth-child(2) {
+  height: 2.6rem;
   margin-right: 2.1rem;
-  padding-top: 1rem;
-  font-size: 1.8rem;
+  margin-top: 0.9rem;
+  font-size: 1.5rem;
 }
 .main__card__content div:nth-child(2) div:nth-child(2) .fa-regular {
   color: #cccccc;
@@ -387,59 +390,59 @@ body {
 }
 .main__card__content div:nth-child(2) div:nth-child(2) .fa-regular__bg1 {
   margin: 3px 0px 0px 2px;
-  position: absolute;
-  width: 0.5rem;
-  height: 0.75rem;
-  top: 0.07rem;
-  right: 0;
-  bottom: 0;
-  left: 0.05rem;
   background-color: #9356DC;
   opacity: 0;
   z-index: -1;
   transition: opacity 450ms;
+  position: absolute;
+  width: 0.7rem;
+  height: 0.63rem;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 .main__card__content div:nth-child(2) div:nth-child(2) .fa-regular__bg2 {
   margin: 3px 0px 0px 2px;
-  position: absolute;
-  width: 0.5rem;
-  height: 0.5rem;
-  top: 0.75rem;
-  right: 0;
-  bottom: 0;
-  left: 0.5rem;
   background-color: #9356DC;
   opacity: 0;
   z-index: -1;
   transition: opacity 450ms;
+  position: absolute;
+  width: 0.9rem;
+  height: 0.23rem;
+  top: 0.6rem;
+  right: 0;
+  bottom: 0;
+  left: 0.18rem;
 }
 .main__card__content div:nth-child(2) div:nth-child(2) .fa-regular__bg3 {
   margin: 3px 0px 0px 2px;
+  background-color: #9356DC;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 450ms;
   position: absolute;
-  width: 0.98rem;
-  height: 0.75rem;
+  width: 0.75rem;
+  height: 0.6rem;
   top: 0.07rem;
   right: 0;
   bottom: 0;
   left: 0.5rem;
-  background-color: #9356DC;
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 450ms;
 }
 .main__card__content div:nth-child(2) div:nth-child(2) .fa-regular__bg4 {
   margin: 3px 0px 0px 2px;
-  position: absolute;
-  width: 0.85rem;
-  height: 0.7rem;
-  top: 0.3rem;
-  right: 0;
-  bottom: 0;
-  left: 0.3rem;
   background-color: #9356DC;
   opacity: 0;
   z-index: -1;
   transition: opacity 450ms;
+  position: absolute;
+  width: 0.56rem;
+  height: 0.77rem;
+  top: 0.3rem;
+  right: 0;
+  bottom: 0;
+  left: 0.365rem;
 }
 .main__card--md {
   position: relative;
@@ -495,11 +498,16 @@ body {
   object-fit: cover;
 }
 .main__card--md__content div:nth-child(2) {
+  height: 5rem;
   display: flex;
   justify-content: space-between;
 }
+.main__card--md__content div:nth-child(2) div:nth-child(1) {
+  height: 5rem;
+}
 .main__card--md__content div:nth-child(2) div:nth-child(1) h3 {
   margin: 0px;
+  padding: 0px;
   font-size: 1.1rem;
   padding-top: 1rem;
   font-weight: bold;
@@ -507,15 +515,17 @@ body {
 }
 .main__card--md__content div:nth-child(2) div:nth-child(1) h4 {
   margin: 0px;
+  padding: 0px;
   padding-left: 1rem;
   padding-top: 0.4rem;
   font-size: 1rem;
   font-weight: 500;
 }
 .main__card--md__content div:nth-child(2) div:nth-child(2) {
+  height: 2.6rem;
   margin-right: 2.1rem;
-  padding-top: 1rem;
-  font-size: 1.8rem;
+  margin-top: 0.9rem;
+  font-size: 1.5rem;
 }
 .main__card--md__content div:nth-child(2) div:nth-child(2) .fa-regular {
   color: #cccccc;
@@ -530,59 +540,59 @@ body {
 }
 .main__card--md__content div:nth-child(2) div:nth-child(2) .fa-regular__bg1 {
   margin: 3px 0px 0px 2px;
-  position: absolute;
-  width: 0.5rem;
-  height: 0.75rem;
-  top: 0.07rem;
-  right: 0;
-  bottom: 0;
-  left: 0.05rem;
   background-color: #9356DC;
   opacity: 0;
   z-index: -1;
   transition: opacity 450ms;
+  position: absolute;
+  width: 0.7rem;
+  height: 0.63rem;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 .main__card--md__content div:nth-child(2) div:nth-child(2) .fa-regular__bg2 {
   margin: 3px 0px 0px 2px;
-  position: absolute;
-  width: 0.5rem;
-  height: 0.5rem;
-  top: 0.75rem;
-  right: 0;
-  bottom: 0;
-  left: 0.5rem;
   background-color: #9356DC;
   opacity: 0;
   z-index: -1;
   transition: opacity 450ms;
+  position: absolute;
+  width: 0.9rem;
+  height: 0.23rem;
+  top: 0.6rem;
+  right: 0;
+  bottom: 0;
+  left: 0.18rem;
 }
 .main__card--md__content div:nth-child(2) div:nth-child(2) .fa-regular__bg3 {
   margin: 3px 0px 0px 2px;
+  background-color: #9356DC;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 450ms;
   position: absolute;
-  width: 0.98rem;
-  height: 0.75rem;
+  width: 0.75rem;
+  height: 0.6rem;
   top: 0.07rem;
   right: 0;
   bottom: 0;
   left: 0.5rem;
-  background-color: #9356DC;
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 450ms;
 }
 .main__card--md__content div:nth-child(2) div:nth-child(2) .fa-regular__bg4 {
   margin: 3px 0px 0px 2px;
-  position: absolute;
-  width: 0.85rem;
-  height: 0.7rem;
-  top: 0.3rem;
-  right: 0;
-  bottom: 0;
-  left: 0.3rem;
   background-color: #9356DC;
   opacity: 0;
   z-index: -1;
   transition: opacity 450ms;
+  position: absolute;
+  width: 0.56rem;
+  height: 0.77rem;
+  top: 0.3rem;
+  right: 0;
+  bottom: 0;
+  left: 0.365rem;
 }
 .main__card--md__new {
   text-align: center;
@@ -652,6 +662,12 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.main-pg__hd p {
+  font-family: "Shrikhand", cursive;
+  margin-right: 1rem;
+  font-size: 1.8rem;
+  font-weight: 100;
+}
 .main-pg__hd div {
   margin-right: 3.1rem;
   padding-top: 1.9rem;
@@ -660,12 +676,6 @@ body {
   color: #737373;
   font-size: 1.6rem;
   font-weight: lighter;
-}
-.main-pg__hd p {
-  font-family: "Shrikhand", cursive;
-  margin-right: 1rem;
-  font-size: 1.8rem;
-  font-weight: 100;
 }
 .main-pg__ent {
   transform: scaleX(1);

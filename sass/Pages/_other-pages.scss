@@ -9,13 +9,18 @@
     width: 98%; 
     padding-left: 1rem;
     
-    &__hd
-    {
+    
+    &__hd{
         display: flex;
         justify-content:space-between;
        
-        div
-        {
+        p{
+            @include font-family;
+            margin-right: 1rem;
+            font-size: 1.8rem;
+            font-weight:100;
+        }
+        div{
             margin-right: 3.1rem;
             padding-top: 1.9rem;
             .fa-heart{
@@ -23,13 +28,7 @@
                 font-size: 1.6rem;
                 font-weight: lighter;
             } 
-        }
-        p{
-            @include font-family;
-            margin-right: 1rem;
-            font-size: 1.8rem;
-            font-weight:100;
-        }
+        }     
     }
 
     @each $menu in $menus {
