@@ -1,3 +1,4 @@
+//animation des menus pages
 @keyframes Menu{
     0% {
         transform: scaleY(0);
@@ -19,6 +20,7 @@
       }
 }
 
+//animation au chargement index
 @keyframes progress-bar {
   0% {
     transform: scaleX(0);
@@ -41,7 +43,6 @@
       transform: scaleX(1);
   }
 }
-
 @keyframes content-page {
     0% {
       transform: translateX(-9999px);
@@ -50,4 +51,35 @@
     100% {      
         transform: translateX(0);
     }
-  }
+}
+
+
+ //animation hover check
+@keyframes check-rotation{
+    0% {
+      transform: rotate(0deg);
+      opacity: 0;
+    }
+    
+    50% {
+      transform: rotate(-180deg);
+      opacity: .5;
+    }
+
+    100% {      
+        transform: rotate(-360deg);
+        opacity: 1;
+    }
+}
+@keyframes check-animation{
+      0% {  
+        opacity: 0;
+      }
+  
+      50%{
+        opacity:.5;
+      }
+      100% {      
+          opacity: 1;
+      }
+}
