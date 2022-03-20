@@ -83,16 +83,20 @@
                     padding-top: 1.2rem;              
                     font-weight: bold;  
                     text-align: right;
-                    padding-right: 1.5rem;
+                    padding-right: 1.1rem;
                 }
                 div:nth-child(3)
                 {
-                    display: none;
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    .fa-check{
+                        transform: rotate(0deg);
+                    }
                 }   
             
                 &:hover > div:nth-child(3)
                 {    
-                    display: block;            
+                    transform: scaleX(1);            
                     text-align: center;
                     width: 4rem;
                     padding-top: 1.3rem;
@@ -100,15 +104,15 @@
                     border-top-right-radius: 1rem;
                     border-bottom-right-radius: 1rem;
                     .fa-check{
+                        transform: rotate(-360deg);
                         font-size: .6rem;
-                        transform:rotate(-360deg);
                         background-color: white;
                         padding: .35rem;
                         border-radius: .8rem;
                         color: lighten($cl-tertiare, 40%);
-                        animation: check-rotation 1000ms 200ms both;
+                        transition:transform 1000ms;
                     }
-                    animation: check-animation 2000ms ease-out;
+                    transition: transform 1000ms;
                 }
                 &:hover > div:nth-child(1) > p
                 {  
@@ -117,7 +121,6 @@
                     text-overflow: ellipsis;
                     white-space: nowrap;
                     overflow: hidden;
-                
                 }
             }
             transform: scaleX(1);
