@@ -12,12 +12,12 @@
         padding-right: .4rem; 
     }
 
-    &__heading
+    p:nth-child(1)
     {
         @include font-family;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
-    &__options
+    p
     {
         margin: 0px;
         margin-bottom: .8rem;
@@ -29,5 +29,11 @@
             margin-left: .6rem;
             font-size: 1.1rem;           
         }
+    }
+    a{
+        text-decoration: none;
+        color: $cl-blanche;
+        font-size: 1rem;
+        font-weight: bold;
     }
 }
