@@ -1,32 +1,38 @@
 
-//gestion de chargement de la page
+//chargement de la page
 .chargement{
     width:20rem;
     position: absolute;
     z-index: 0;
-    top: 22rem;
+    top: 38vh;
+    p{
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: bold;
+    }
 }
 .progress-bar {
-    width:20rem;
+    width:90%;
     position: absolute;
     z-index: 0;
-    height: 28px;
+    height: 2.5rem;
     opacity: 1;
     border-radius: 15px;
     background-color:$cl-primaire;
-    top: 25rem;
+    top: 45vh;
+    margin: auto;
     transform-origin: left;
     transform: scaleX(0);
-    animation: progress-bar 2000ms 1000ms;
+    animation: progress-bar 1000ms 500ms;
 }
 .content {
     position: absolute;
     overflow: hidden;
     z-index: 1;
-    animation:content-page 2000ms 2000ms both;
+    animation:content-page 1000ms 1500ms both;
 }
 
-//composant main principal
+//main principal
 .main
 {
     margin-top: 4.3rem;
