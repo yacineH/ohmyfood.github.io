@@ -1,14 +1,18 @@
+body{
+    background-color:lighten($cl-gris, 8%); 
+}
+
 .main-pg
 {
-    background-color: white;
+    background-color:lighten($cl-gris, 8%);
     position:relative;
-    border-radius: 3.4rem;
-    border:1px solid white;
+    border-top-left-radius: 3.4rem;
+    border-top-right-radius: 3.4rem;
     top:-4rem;
     z-index: 1;
-    width: 98%; 
     padding-left: 1rem;
-    
+    margin-bottom: 1rem;
+
     
     &__hd{
         display: flex;
@@ -53,7 +57,7 @@
                 align-items: stretch;
                 width: 95%;
                 height: 4.4rem;
-                box-shadow:2px 3px 10px #d9d9d9;
+                box-shadow:5px 3px 20px darken($cl-gris,5%);
                 border-radius: 1rem;
                 margin-bottom: 1.2rem;
                 cursor: pointer;
@@ -129,7 +133,7 @@
         } 
     }
 
-    &__btn{
+    &__btn{      
         @include btn(11.2rem);
     }
 }

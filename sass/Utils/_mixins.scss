@@ -1,10 +1,10 @@
 @mixin etape($color-bg:lighten($cl-gris,15%),$color-ico:lightness-shift($cl-gris)){
-    margin-left: 1rem;
+    margin-left: 1.6rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 4.3rem;
-    width: 85%;
+    width: 87%;
     border-radius: 1.25rem;
     box-shadow:2px 3px 10px $cl-gris;
     background-color:$color-bg; 
@@ -50,7 +50,7 @@
     font-size: 1.4rem;
     font-weight: bold;
     margin-left: 1.25rem;
-    margin-top: 3.1rem;
+    margin-top: 2.5rem;
 }
 
 @function lightness-shift($colour){
@@ -67,16 +67,14 @@
     margin: auto;
     text-decoration: none;
     text-align: center;
-    color:white;
+    color:$cl-blanche;
     background: radial-gradient(farthest-corner at 12.5rem 5rem  ,$cl-primaire,$cl-secondaire);
     border-radius: 2.1rem;
     padding: $padding;
-    margin-top: 2.5rem;
-    margin-bottom: 1.8rem;
+    margin-top: 3rem;
     font-size: 1.0rem;
     font-weight: bold;
     box-shadow:2px 3px 10px darken($cl-gris,10%);
-
     position: relative;
     z-index: 1;
 
@@ -110,12 +108,12 @@
     top:.8rem;
     right: 2.8rem;
     z-index: 1;
-    width: 5rem;
-    height: 1.3rem;
+    width: 5.5rem;
+    height: 1.6rem;
     background-color: lighten($color: $cl-tertiare, $amount: 50%);
     color: $cl-tertiare;
     font-weight: bolder;
-    font-size: .8rem;
+    font-size: .9rem;
     padding-top: .35rem;
     border-radius: .12rem;
 }

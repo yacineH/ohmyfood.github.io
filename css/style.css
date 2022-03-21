@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
   margin: auto;
-  width: 25rem;
+  width: 25.875rem;
   background-color: white;
   font-family: sans-serif;
 }
@@ -82,12 +82,13 @@ body {
   }
 }
 .footer {
-  margin-top: 0.5rem;
   color: white;
   padding-left: 1.6rem;
-  padding-top: 1.2rem;
-  height: 14.3rem;
+  padding-top: 1.3rem;
+  height: 11rem;
   background-color: #404040;
+  position: relative;
+  width: 100%;
 }
 .footer .fa-utensils {
   padding-right: 0.4rem;
@@ -142,7 +143,7 @@ body {
   font-size: 0.9rem;
 }
 .header__reservation {
-  background-color: white;
+  background-color: #f3f3f3;
   padding-bottom: 2.5rem;
   padding-top: 3.4rem;
 }
@@ -171,8 +172,7 @@ body {
   background: radial-gradient(farthest-corner at 12.5rem 5rem, #9356DC, #f779d3);
   border-radius: 2.1rem;
   padding: 1.2rem;
-  margin-top: 2.5rem;
-  margin-bottom: 1.8rem;
+  margin-top: 3rem;
   font-size: 1rem;
   font-weight: bold;
   box-shadow: 2px 3px 10px silver;
@@ -200,22 +200,19 @@ body {
   transition: opacity 250ms;
 }
 
-.fonctionnement {
-  margin: auto;
-}
-.fonctionnement__heading {
+.fonctionnement p:nth-child(1) {
   font-size: 1.4rem;
   font-weight: bold;
   margin-left: 1.25rem;
-  margin-top: 3.1rem;
+  margin-top: 2.5rem;
 }
 .fonctionnement__etape {
-  margin-left: 1rem;
+  margin-left: 1.6rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 4.3rem;
-  width: 85%;
+  width: 87%;
   border-radius: 1.25rem;
   box-shadow: 2px 3px 10px #d9d9d9;
   background-color: white;
@@ -248,12 +245,12 @@ body {
   font-weight: 700;
 }
 .fonctionnement__etape--modifier {
-  margin-left: 1rem;
+  margin-left: 1.6rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 4.3rem;
-  width: 85%;
+  width: 87%;
   border-radius: 1.25rem;
   box-shadow: 2px 3px 10px #d9d9d9;
   background-color: #fdd9f3;
@@ -287,7 +284,8 @@ body {
 }
 
 .chargement {
-  width: 20rem;
+  margin: auto;
+  width: 25rem;
   position: absolute;
   z-index: 0;
   top: 38vh;
@@ -297,16 +295,14 @@ body {
   text-align: center;
   font-weight: bold;
 }
-
-.progress-bar {
-  width: 90%;
+.chargement__progress {
+  width: 100%;
   position: absolute;
   z-index: 0;
   height: 2.5rem;
   opacity: 1;
   border-radius: 15px;
   background-color: #9356DC;
-  top: 45vh;
   margin: auto;
   transform-origin: left;
   transform: scaleX(0);
@@ -314,10 +310,12 @@ body {
 }
 
 .content {
+  margin: auto;
+  width: 25.875rem;
   position: absolute;
   overflow: hidden;
   z-index: 1;
-  animation: content-page 1000ms 1500ms both;
+  animation: content-page 1000ms 1200ms both;
 }
 
 .main {
@@ -329,7 +327,7 @@ body {
   font-size: 1.4rem;
   font-weight: bold;
   margin-left: 1.25rem;
-  margin-top: 3.1rem;
+  margin-top: 2.5rem;
 }
 .main__card {
   position: relative;
@@ -637,12 +635,12 @@ body {
   top: 0.8rem;
   right: 2.8rem;
   z-index: 1;
-  width: 5rem;
-  height: 1.3rem;
+  width: 5.5rem;
+  height: 1.6rem;
   background-color: #a1f9e3;
   color: #0a916f;
   font-weight: bolder;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   padding-top: 0.35rem;
   border-radius: 0.12rem;
 }
@@ -680,20 +678,24 @@ body {
   overflow: hidden;
 }
 .header-pg div:nth-child(2) img {
-  width: 26.2rem;
+  width: 25.875rem;
   height: 19rem;
   object-fit: cover;
 }
 
+body {
+  background-color: #ededed;
+}
+
 .main-pg {
-  background-color: white;
+  background-color: #ededed;
   position: relative;
-  border-radius: 3.4rem;
-  border: 1px solid white;
+  border-top-left-radius: 3.4rem;
+  border-top-right-radius: 3.4rem;
   top: -4rem;
   z-index: 1;
-  width: 98%;
   padding-left: 1rem;
+  margin-bottom: 1rem;
 }
 .main-pg__hd {
   display: flex;
@@ -737,7 +739,7 @@ body {
   align-items: stretch;
   width: 95%;
   height: 4.4rem;
-  box-shadow: 2px 3px 10px #d9d9d9;
+  box-shadow: 5px 3px 20px #cccccc;
   border-radius: 1rem;
   margin-bottom: 1.2rem;
   cursor: pointer;
@@ -823,7 +825,7 @@ body {
   align-items: stretch;
   width: 95%;
   height: 4.4rem;
-  box-shadow: 2px 3px 10px #d9d9d9;
+  box-shadow: 5px 3px 20px #cccccc;
   border-radius: 1rem;
   margin-bottom: 1.2rem;
   cursor: pointer;
@@ -909,7 +911,7 @@ body {
   align-items: stretch;
   width: 95%;
   height: 4.4rem;
-  box-shadow: 2px 3px 10px #d9d9d9;
+  box-shadow: 5px 3px 20px #cccccc;
   border-radius: 1rem;
   margin-bottom: 1.2rem;
   cursor: pointer;
@@ -981,8 +983,7 @@ body {
   background: radial-gradient(farthest-corner at 12.5rem 5rem, #9356DC, #f779d3);
   border-radius: 2.1rem;
   padding: 1.2rem;
-  margin-top: 2.5rem;
-  margin-bottom: 1.8rem;
+  margin-top: 3rem;
   font-size: 1rem;
   font-weight: bold;
   box-shadow: 2px 3px 10px silver;

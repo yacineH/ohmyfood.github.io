@@ -1,5 +1,6 @@
 .header
-{   
+{  
+
     &__logo
     {
         margin: auto;
@@ -36,7 +37,7 @@
     }
     &__reservation
     {
-        background-color: lighten($cl-gris,25%);
+        background-color: lighten($cl-gris,10%);
         padding-bottom: 2.5rem;
         padding-top: 3.4rem;
         h2
