@@ -31,10 +31,10 @@
 .content {
     margin :auto;
     width: 25.875rem;
-    position: absolute;
+    position:relative;
     overflow: hidden;
     z-index: 1;
-    animation:content-page 1000ms 1200ms both;
+   // animation:content-page 1000ms 1200ms both;
 }
 
 //main principal

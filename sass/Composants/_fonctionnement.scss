@@ -9,7 +9,7 @@
     &__etape
     {
         @include etape;
-        &--modifier{
+        &:hover{
           @include etape(lighten($cl-secondaire,20%), $cl-primaire);
         }
     }

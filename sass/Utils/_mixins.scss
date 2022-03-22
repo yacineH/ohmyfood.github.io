@@ -4,11 +4,12 @@
     flex-direction: row;
     align-items: center;
     height: 4.3rem;
-    width: 87%;
+    width: 90%;
     border-radius: 1.25rem;
     box-shadow:2px 3px 10px $cl-gris;
     background-color:$color-bg; 
     margin-bottom: 1.25rem;
+    cursor: pointer;
      
 
     .fa-1,.fa-2,.fa-3
@@ -63,6 +64,7 @@
 
 @mixin btn($width:11.2rem,$padding:1.2rem)
 {
+    display: block;
     width: $width;
     margin: auto;
     text-decoration: none;
@@ -77,6 +79,7 @@
     box-shadow:2px 3px 10px darken($cl-gris,10%);
     position: relative;
     z-index: 1;
+    cursor: pointer;
 
    &:hover {
       box-shadow:.1rem .18rem .6rem darken($cl-gris,40%);
@@ -122,14 +125,6 @@
     font-family: 'Shrikhand', cursive; 
 }
 
-@mixin heart-cl{
-    margin:3px 0px 0px 2px;
-    background-color: $cl-primaire;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity 450ms;
-    position: absolute;
-}
 
 @mixin card{
 
@@ -147,7 +142,7 @@
         position: relative;
         box-shadow:2px 3px 10px #d9d9d9;
         background-color: white;
-        width: 90%;
+        width: 92%;
         height: 16.2rem;
         border-radius: 1rem;
         margin-left: 1rem;
@@ -225,10 +220,10 @@
             }
             div:nth-child(2)
             {
-                height: 2.6rem;
+                height: 1.9rem;
                 margin-right: 2.1rem;
-                margin-top: .9rem;
-                font-size: 1.5rem;
+                margin-top: 1rem;
+                font-size: 1.9rem;
                 
                 .fa-regular{
                     color:darken($cl-gris,5%);                
@@ -236,47 +231,58 @@
                     z-index: 1;
                     &:hover{
                         color: $cl-primaire;
-                        & .fa-regular__bg1,.fa-regular__bg2,.fa-regular__bg3,.fa-regular__bg4 {
+                        & .fa-regular__bg1,.fa-regular__bg2,.fa-regular__bg3 {
                             opacity: 1;
                         }
                       
                     }
                     &__bg1 {
-                        @include heart-cl;
-                        width: .7rem;
-                        height: .63rem;
+                        border-top-left-radius: 8px;
+                        border-top-right-radius: 8px;
+                        margin-top:.25rem;
+                        background-color: $cl-primaire;
+                        opacity: 0;
+                        z-index: -1;
+                        transition: opacity 450ms;
+                        position: absolute;
+
+
+                        width: 1.75rem;
+                        height: .75rem;
                         top: 0;
                         right: 0;
                         bottom: 0;
-                        left: 0;
+                        left: .05rem;
                     }
                     &__bg2 {
-                        @include heart-cl;
-                        width: .9rem;
-                        height: .23rem;
-                        top: .6rem;
+                        margin-top: 15px;
+                        background-color: $cl-primaire;
+                        opacity: 0;
+                        z-index: -1;
+                        transition: opacity 450ms;
+                        position: absolute;
+
+                        width: 1.22rem;
+                        height: .28rem;
+                        top: 0;
                         right: 0;
                         bottom: 0;
-                        left: .18rem; 
+                        left: 0.3rem; 
                     }
                     &__bg3 {
-                        @include heart-cl;
-                        width: .75rem;
-                        height: .6rem;
-                        top: .07rem;
-                        right: 0;
-                        bottom: 0;
-                        left: .5rem;
-                    }
-                    &__bg4 {
+                        margin-top:18px;
+                        background-color: $cl-primaire;
+                        opacity: 0;
+                        z-index: -1;
+                        transition: opacity 450ms;
+                        position: absolute;
 
-                        @include heart-cl;
-                        width: .56rem;
-                        height: .77rem;
-                        top: .3rem;
+                        width: .75rem;
+                        height: .38rem;
+                        top: 0;
                         right: 0;
                         bottom: 0;
-                        left: .365rem;
+                        left: .55rem;
                     }
                 }       
 
