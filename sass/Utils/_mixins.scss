@@ -226,66 +226,37 @@
                 font-size: 1.9rem;
                 
                 .fa-regular{
+                    height:2rem;
+                    width: 2rem;
+                    cursor: pointer;
+                    font-size: 2rem;
                     color:darken($cl-gris,5%);                
-                    position: relative;
+                    position:relative;
                     z-index: 1;
+
                     &:hover{
                         color: $cl-primaire;
-                        & .fa-regular__bg1,.fa-regular__bg2,.fa-regular__bg3 {
+                        &::after{
                             opacity: 1;
-                        }
-                      
+                        }  
                     }
-                    &__bg1 {
-                        border-top-left-radius: 8px;
-                        border-top-right-radius: 8px;
-                        margin-top:.25rem;
-                        background-color: $cl-primaire;
+                    &::after{
+                        content: "";
+                        margin-block-end: 3px;
+                        position: absolute;
+                        border-bottom-left-radius: 18px;
+                        border-bottom-right-radius: 18px;
+                        top: .35rem;
+                        right: .24rem;
+                        bottom: .15rem;
+                        overflow: hidden;
+                        left: .18rem;
+                        background-color:$cl-primaire;
                         opacity: 0;
                         z-index: -1;
-                        transition: opacity 450ms;
-                        position: absolute;
-
-
-                        width: 1.75rem;
-                        height: .75rem;
-                        top: 0;
-                        right: 0;
-                        bottom: 0;
-                        left: .05rem;
-                    }
-                    &__bg2 {
-                        margin-top: 15px;
-                        background-color: $cl-primaire;
-                        opacity: 0;
-                        z-index: -1;
-                        transition: opacity 450ms;
-                        position: absolute;
-
-                        width: 1.22rem;
-                        height: .28rem;
-                        top: 0;
-                        right: 0;
-                        bottom: 0;
-                        left: 0.3rem; 
-                    }
-                    &__bg3 {
-                        margin-top:18px;
-                        background-color: $cl-primaire;
-                        opacity: 0;
-                        z-index: -1;
-                        transition: opacity 450ms;
-                        position: absolute;
-
-                        width: .75rem;
-                        height: .38rem;
-                        top: 0;
-                        right: 0;
-                        bottom: 0;
-                        left: .55rem;
-                    }
+                        transition: opacity 250ms;
+                    } 
                 }       
-
             }
         }
     }

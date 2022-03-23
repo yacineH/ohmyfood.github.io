@@ -29,62 +29,35 @@ body{
             margin-top: 1.6rem;
             height: 1.7rem;
             .fa-heart{
+                height:2rem;
+                width: 2rem;
+                cursor: pointer;
                 font-size: 2rem;
                 color:darken($cl-gris,5%);                
                 position:relative;
                 z-index: 1;
                 &:hover{
                     color: $cl-primaire;
-                    & .fa-heart__bg1,.fa-heart__bg2,.fa-heart__bg3 {
+                    &::after{
                         opacity: 1;
-                    }
-                  
-                }
-                &__bg1 {
-                    background-color: $cl-primaire;
-                    opacity: 0;
-                    z-index: -1;
-                    transition: opacity 450ms;
-                    position:absolute;
-                    margin:6px 0px 0px 2px;
+                    }  
+                } 
 
-                    width: 1.65rem;
-                    height: 0.8rem;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    left: 1px;
-                }
-                &__bg2 {
-                    margin:22px 0px 0px 0px;
-                    background-color: $cl-primaire;
-                    opacity: 0;
-                    z-index: -1;
-                    transition: opacity 450ms;
+                &::after{
+                    content: "";
+                    margin-block-end: 2px;
                     position: absolute;
-
-                    width: .5rem;
-                    height: .4rem;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    left: 12px;
-                }
-                &__bg3 {
-
-                    margin:13px 0px 0px 0px;
-                    background-color: $cl-primaire;
+                    border-bottom-left-radius: 18px;
+                    border-bottom-right-radius: 18px;
+                    top: .35rem;
+                    right: .18rem;
+                    bottom: .15rem;
+                    overflow: hidden;
+                    left: .2rem;
+                    background-color:$cl-primaire;
                     opacity: 0;
                     z-index: -1;
-                    transition: opacity 450ms;
-                    position: absolute;
-
-                    width: 1.1rem;
-                    height: .35rem;
-                    top: .3rem;
-                    right: 0;
-                    bottom: 0;
-                    left: .44rem;
+                    transition: opacity 250ms;
                 }
             } 
         }     
