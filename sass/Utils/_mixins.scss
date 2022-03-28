@@ -220,12 +220,11 @@
             }
             div:nth-child(2)
             {
-                height: 1.9rem;
+                height: 2rem;
                 margin-right: 2.1rem;
                 margin-top: 1rem;
-                font-size: 1.9rem;
                 
-                .fa-regular{
+                .fa-heart{
                     height:2rem;
                     width: 2rem;
                     cursor: pointer;
@@ -233,13 +232,13 @@
                     color:darken($cl-gris,5%);                
                     position:relative;
                     z-index: 1;
-
                     &:hover{
                         color: $cl-primaire;
                         &::after{
                             opacity: 1;
                         }  
-                    }
+                    } 
+    
                     &::after{
                         content: "";
                         margin-block-end: 3px;
@@ -247,16 +246,54 @@
                         border-bottom-left-radius: 18px;
                         border-bottom-right-radius: 18px;
                         top: .35rem;
-                        right: .24rem;
+                        right: .2rem;
                         bottom: .15rem;
                         overflow: hidden;
-                        left: .18rem;
+                        left: .19rem;
                         background-color:$cl-primaire;
                         opacity: 0;
                         z-index: -1;
                         transition: opacity 250ms;
-                    } 
-                }       
+                    }
+                } 
+
+
+
+
+
+
+                // .fa-regular{
+                //     height:2rem;
+                //     width: 2rem;
+                //     cursor: pointer;
+                //     font-size: 2rem;
+                //     color:darken($cl-gris,5%);                
+                //     position:relative;
+                //     z-index: 1;
+
+                //     &:hover{
+                //         color: $cl-primaire;
+                //         &::after{
+                //             opacity: 1;
+                //         }  
+                //     }
+                //     &::after{
+                //         content: "";
+                //         margin-block-end: 3px;
+                //         position: absolute;
+                //         border-bottom-left-radius: 18px;
+                //         border-bottom-right-radius: 18px;
+                //         top: .35rem;
+                //         right: .24rem;
+                //         bottom: .15rem;
+                //         overflow: hidden;
+                //         left: .18rem;
+                //         background-color:$cl-primaire;
+                //         opacity: 0;
+                //         z-index: -1;
+                //         transition: opacity 250ms;
+                //     } 
+                // }       
             }
         }
     }
