@@ -37,6 +37,22 @@
     animation:content-page 1000ms 1200ms both;
 }
 
+.fonctionnement
+{
+
+    h2
+    {
+        @include title;
+    }  
+    &__etape
+    {
+        @include etape;
+        &:hover{
+          @include etape(lighten($cl-secondaire,20%), $cl-primaire);
+        }
+    }
+}
+
 //main principal
 .main
 {

@@ -163,7 +163,7 @@ body{
         } 
     }
 
-    &__btn{      
-        @include btn(11.2rem);
+    a{ 
+        width: 11.2rem;     
     }
 }

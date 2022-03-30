@@ -62,48 +62,6 @@
 }
 
 
-@mixin btn($width:11.2rem,$padding:1.2rem)
-{
-    display: block;
-    width: $width;
-    margin: auto;
-    text-decoration: none;
-    text-align: center;
-    color:$cl-blanche;
-    background: radial-gradient(farthest-corner at 12.5rem 5rem  ,$cl-primaire,$cl-secondaire);
-    border-radius: 2.1rem;
-    padding: $padding;
-    margin-top: 3rem;
-    font-size: 1.0rem;
-    font-weight: bold;
-    box-shadow:2px 3px 10px darken($cl-gris,10%);
-    position: relative;
-    z-index: 1;
-    cursor: pointer;
-
-   &:hover {
-      box-shadow:.1rem .18rem .6rem darken($cl-gris,40%);
-        &::after {
-            border-radius: 2.1rem;
-            opacity: 1;
-        }
-      }
-
-    &::after { 
-      border-radius: 2.1rem;
-      content: "";           
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background: radial-gradient(farthest-corner at 12.5rem 5rem  ,lighten($cl-primaire,5),lighten($cl-secondaire,5));
-      opacity: 0;
-      z-index: -1;
-      transition: opacity 250ms;
-  }
-}
-
 @mixin card-new{
 
     text-align: center;

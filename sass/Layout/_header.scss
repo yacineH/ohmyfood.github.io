@@ -60,7 +60,8 @@
         }
         a
         {
-          @include btn(15.6rem);
+          width: 15.6rem;
+          //@include btn(15.6rem);
         }
     }
 }
