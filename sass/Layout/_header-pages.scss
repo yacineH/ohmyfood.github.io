@@ -25,13 +25,14 @@
         }
         div
         {
-            width: 18.75rem;
+           width: 18.75rem;
             text-align: center;
             
             img
             {                
                 height: 2rem;
                 width: 12.6rem; 
+               //width: 100%;
             }
         }
     }
@@ -41,7 +42,8 @@
         overflow: hidden;
         img
         {
-            width: 25.875rem;
+            width: 100%;
+           // width: 25.875rem;
             height: 19rem; 
             object-fit: cover; 
         }
