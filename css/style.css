@@ -206,7 +206,7 @@ body {
 
 .chargement {
   margin: auto;
-  width: 25rem;
+  width: 100%;
   position: absolute;
   z-index: 0;
   top: 38vh;
@@ -585,7 +585,7 @@ body {
   display: flex;
   padding-top: 2rem;
   padding-bottom: 0.9rem;
-  justify-content: left;
+  justify-content: center;
   margin-left: 2rem;
 }
 .header-pg div:nth-child(1) a {
